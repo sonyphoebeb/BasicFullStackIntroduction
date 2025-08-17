@@ -108,6 +108,45 @@ tr:hover {
     background-color: var(--netflix-gray);
 }
 
+/* Navigation */
+nav {
+    background-color: var(--netflix-dark-gray);
+    padding: 15px 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--netflix-border-gray);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    color: var(--netflix-text-gray);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    color: var(--netflix-red);
+    background-color: var(--netflix-gray);
+}
+
 /* Container for better layout */
 .container {
     max-width: 1200px;

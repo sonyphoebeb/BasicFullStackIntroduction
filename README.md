@@ -82,3 +82,39 @@ npx serve .
 - Figma for UI/UX Design  
 - Git account creation  
 - Branching in Git
+
+📅 Second Day: 17-08-2025
+## Day 2 – HTML Basics  
+
+1. **Introduction to HTML**  
+   - `<!DOCTYPE>` → declaration that defines this is an HTML document  
+   - `<html>` → root element of an HTML page  
+   - `<head>` → contains metadata, title, links, scripts  
+   - `<body>` → contains visible content (text, images, links, etc.)  
+   - `<h1>` → defines a large heading  
+   - `<p>` → defines a paragraph  
+
+2. HTML Editors
+   - Example: Notepad (used for writing the first code)  
+
+3. Basic HTML Code  
+   <!DOCTYPE html>
+   <html>
+     <head>
+       <title>My First Page</title>
+     </head>
+     <body>
+       <h1>Hello World</h1>
+       <p>This is a paragraph.</p>
+     </body>
+   </html>
+
+4. HTML Elements
+     Defined by a start tag, some content, and an end tag
+     Example: <h1>Heading</h1>
+
+5. HTML Attributes
+   Provide additional information about HTML elements
+   Example: <a href="sony.com">Visit W3Schools</a>
+   <a> → element
+   href → attribute

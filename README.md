@@ -115,6 +115,6 @@ npx serve .
 
 5. HTML Attributes
    Provide additional information about HTML elements
-   Example: <a href="sony.com">Visit this website</a>
-   <a> → element
-   href → attribute
+   Example: <a href="www.sony.com"> PLEASE VISIT THIS </a>
+   <a> is an element
+   href is its attribute

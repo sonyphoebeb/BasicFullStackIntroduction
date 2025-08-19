@@ -130,3 +130,16 @@ npx serve .
       	<html lang="en">
       g.	title → Defines extra information about an element (tooltip)
       	<p title="This is my name">Sony</p>
+
+6.HTML Styles: attribute for styling HTML elements (background-color, color, font-family, font-size, text align)
+
+7.HTML Quotation
+     a.<abbr>	Defines an abbreviation
+     b.<address>	Defines contact information
+     c.<q>	Defines a short inline quotation
+
+8.HTML Formatting (<b> <strong> <i> <em> <mark> <small> <del> <sub> <sup>)
+
+9.
+
+      

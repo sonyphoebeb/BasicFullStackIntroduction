@@ -64,26 +64,26 @@ npx serve .
 ## Original Project Notes
 
 📅 First Day: 16-08-2025
-### Basic Website Flow  
+# Basic Website Flow  
 1. IP address introduction: Understanding what an IP address is 
 2. Website DNS setting basics: dropdown in abc.com website 
 3. Requirement Gathering: (SDLC – Step 1)  
 
-### Project: Phebio  
+# Project: Phebio  
 - User Application (Web): Test, address, slot booking, data stored in database  
 - Admin Application: Manage riders, handle bookings  
 - Riders Mobile Application: where to go & whom to approach
 - Authentication Process: otp
 - Test Tube Mapping: eg-sugar test requires X ml of blood in a yellow test tube
 
-### Design & Tools  
+# Design & Tools  
 - Wireframes & Flow Diagrams of the application  
 - Figma for UI/UX Design  
 - Git account creation  
 - Branching in Git
 
 📅 Second Day: 17-08-2025
-## Day 2 – HTML Basics 
+# Day 2 – HTML Basics 
 1. HTML Introduction
 2. HTML Editors
 3. Basic HTML Code
@@ -111,7 +111,7 @@ npx serve .
 25. HTML responsive web design
 
 📅 Date: 18-08-2025
-## Day 3 – HTML Basics Practice
+# Day 3 – HTML Basics Practice
 
 1. HTML Introduction
     <!DOCTYPE> declaration that defines this is an HTML document  
@@ -189,7 +189,7 @@ npx serve .
        </HTML>
 
 📅 Date: 19-08-2025
-## Day 4 – HTML Basics Continuation
+# Day 4 – HTML Basics Continuation
 
 Today I practiced more HTML elements and attributes.  
 Here are the topics I covered:

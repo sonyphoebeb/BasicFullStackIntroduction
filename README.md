@@ -119,14 +119,14 @@ npx serve .
       a. href (in <a>) → Specifies the URL of the page the link goes to
          <a href="https://www.sony.com">Visit Sony</a>
       b.	src (in <img>) → Specifies the path to the image to be displayed
-         <img src="im.png" alt="My Image">
+         <img src="img.png" alt="My Image">
       c.	width and height (in <img>) → Provide size information for images
-       	<img src="im.png" width="200" height="150">
+       	<img src="img.png" width="200" height="150">
       d.	alt (in <img>) → Provides alternate text for an image
-      	<img src="im.png" alt="Profile Picture">
+      	<img src="img.png" alt="Profile Picture">
       e.	style → Adds styles to an element (color, font, size, etc.)
       	<p style="color:blue;">This is blue text</p>
       f.	lang (in <html>) → Declares the language of the webpage
       	<html lang="en">
       g.	title → Defines extra information about an element (tooltip)
-      	<p title="I am a tooltip">Hover over me</p>
+      	<p title="This is my name">Sony</p>

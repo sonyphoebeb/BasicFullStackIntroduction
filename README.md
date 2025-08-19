@@ -109,12 +109,24 @@ npx serve .
      </body>
    </html>
 
-4. HTML Elements
+4. HTML Elements:
      Defined by a start tag, some content, and an end tag
      Example: <h1>Heading</h1>
 
-5. HTML Attributes
+5. HTML Attributes:
    Provide additional information about HTML elements
-   Example: <a href="www.sony.com"> PLEASE VISIT THIS </a>
-   <a> is an element
-   href is its attribute
+   All HTML elements can have attributes.
+      a. href (in <a>) → Specifies the URL of the page the link goes to
+         <a href="https://www.sony.com">Visit Sony</a>
+      b.	src (in <img>) → Specifies the path to the image to be displayed
+         <img src="im.png" alt="My Image">
+      c.	width and height (in <img>) → Provide size information for images
+       	<img src="im.png" width="200" height="150">
+      d.	alt (in <img>) → Provides alternate text for an image
+      	<img src="im.png" alt="Profile Picture">
+      e.	style → Adds styles to an element (color, font, size, etc.)
+      	<p style="color:blue;">This is blue text</p>
+      f.	lang (in <html>) → Declares the language of the webpage
+      	<html lang="en">
+      g.	title → Defines extra information about an element (tooltip)
+      	<p title="I am a tooltip">Hover over me</p>

@@ -161,25 +161,114 @@ npx serve .
       g.	title → Defines extra information about an element (tooltip)
       	<p title="This is my name">Sony</p>
 
-6.Code that i have written today
-      
+6.Code practiced in Cursor today
+      <!DOCTYPE>
+<HTML>
+    <HEAD>
+        <TITLE>First Trail</TITLE>
+    </HEAD>
+    <BODY style="background-color: gray;">
+        <H1>Hello World</H1>
+        <H2 style="background-color: black; color:pink">Heading 2 </H2>
+        <H3 style="color:orange">Heading 3 </H3>
+        <H4 style="color:blue">Heading 4 </H4>
+        <H5 style="color:green">Heading 5 </H5>
+        <H6 style="color:black">Heading 6 </H6>
+        
+        <P style="color:orange">This is my first trail</P>
+        <P style="color:blue">This is my <b>second trail</b></P>
+        <P style="color:green">This is my <i>third trail</i></P>
+        <P style="color:black">This is my <u>fourth trail</u></P>
+        <P style="color:purple">This is my <s>fifth trail</s></P>
+        <P style="color:brown">This is my <mark>sixth trail</mark></P>
+        <P style="color:black">This is my seventh trailThis is my seventh trailThis is my seventh trail This is my seventh trail <br> This is my seventh trail This is my seventh trail <br>
+            This is my seventh trail This is my seventh trailThis is my seventh trailThis is my seventh tr</P>
+            <p>Hey, I am Sony</p>
+            <p>Please refer below for my webiste link</p>
+            <a href="https://www.Sony.come">Sony</a><br>
+            <img src="im.png" alt="my image">
+            
+    </BODY>
+</HTML>
 
 📅 Date: 19-08-2025
 
 ## Day 4 – HTML Basics Continuation
 
-6.HTML Styles: attribute for styling HTML elements (background-color, color, font-family, font-size, text align)
+1.HTML Styles: attribute for styling HTML elements (background-color, color, font-family, font-size, text align)
 
-7.HTML Quotation
+2.HTML Quotation
      a.<abbr>	Defines an abbreviation
      b.<address>	Defines contact information
      c.<q>	Defines a short inline quotation
 
-8.HTML Formatting (<b> <strong> <i> <em> <mark> <small> <del> <sub> <sup>)
+3.HTML Formatting (<b> <strong> <i> <em> <mark> <small> <del> <sub> <sup>)
 
-9.HTML comments: they are not displayed in the browser, but they can help document your HTML source code.
+4.HTML comments: they are not displayed in the browser, but they can help document your HTML source code.
               <!-- Write your comments here -->
 
-10.              
+5. HTML Colors: HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values
+    Border Color : we can set the color of borders
+    example: <h1 style="border:1px solid blue;">Hello Sweet Home</h1>
+
+6.I made some changes to yesterday's code and learned a few more HTML elements and attributes 
+        <!DOCTYPE html>
+<HTML lang="en">
+    <HEAD>
+        <TITLE>First Trail</TITLE>
+    </HEAD>
+    <BODY style="background-color: gray;">
+        <H1 style="font-size:60px;">Hello World</H1>
+        <H2 style="background-color: black; color:pink">Heading 2 </H2>
+        <H3 style="color:orange">Heading 3 </H3>
+        <H4 style="color:blue">Heading 4 </H4>
+        <H5 style="color:green">Heading 5 </H5>
+        <H6 style="color:black">Heading 6 </H6>
+        
+        <P style="color:orange">I am normal paragraph</P>
+        <P style="color:blue"><b>This is a bold paragraph </b></P>
+        <P style="color:green"><i>This is an italic paragraph</i></P>
+        <em>This is an emphasized text</em><br><p></p>
+        <small>This is small text</small>
+        <p>This is <sub>subscripted</sub> and this is <sup>superscripted</sup></p>
+        <P style="color:black; background-color:white"><u>This is an underlined paragraph with bg clur</u></P>
+        <P style="color:purple; font-size:50px;"><s>This is a strike paragraph</s></P>
+        <P style="color:brown"> <mark>This is a marked paragraph</mark></P>
+        <P style="font-family:courier">Hi Hello Namaste</P>
+        <p style="text-align:center; color:blue">Centered paragraph</p>
+        <P style="color:black">This paragraph is for understanding break concept This paragraph is for understanding break concept This paragraph is for understanding break concept This paragraph is for understanding break concept 
+            <br> This paragraph is for understanding break concept <br>
+            This paragraph is for understanding break concept This paragraph is for understanding break concept This paragraph is for understanding break concept This paragraph is for understanding break concept</P>
+            <p style="color:darkgreen">Hey, I am Sony, Please refer below for my webiste link</p>
+            <a href="https://www.Sony.come">Sony</a><br>
+            <hr>
+            <img src="D:\FullStackDevelopment\HTMLProject\BasicFullStackIntroduction\myfirsthtml\images\WhatsApp Image 2025-08-19 at 19.34.44_3025bcf1.jpg" alt="my image" height="250" width="150">
+
+            <p title='Sony "Cute" Girl'>Sony with double quotes</p>
+            <p title="Sony 'Cute' Girl">Sony with single quotes</p>
+            <pre style="background-color:black; color:white" "width>
+                Hi, My name is Sony.
+                Im a btech graduate in It from KMIT.
+                Im currently working as a content reviewer @TechM.
+            </pre>
+            <p>I want to tell a quaotation <q style="color:aliceblue;">A friend in need is a friend indeed</q></p>
+            <p>The <abbr title="OTT Platform" style="color: brown;">Netflix </abbr>was founded in 1997.</p>
+            <hr>
+            <address style="color: antiquewhite;">
+                Written by Sony.<br> 
+                Visit us at:<br>
+                www.sony.com<br>
+                2-19, Ypl<br>
+                AP
+                </address>
+
+                <p>This is a paragraph.</p>
+                <!-- This is another paragraph -->
+                <p>This is a paragraph too.</p>
+
+                <h1 style="border:1px solid blue;">Hello Sweet Home</h1>
+               
+    </BODY>
+</HTML>
 
       

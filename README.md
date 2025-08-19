@@ -64,7 +64,6 @@ npx serve .
 ## Original Project Notes
 
 📅 First Day: 16-08-2025
-
 ### Basic Website Flow  
 1. IP address introduction: Understanding what an IP address is 
 2. Website DNS setting basics: dropdown in abc.com website 
@@ -84,7 +83,6 @@ npx serve .
 - Branching in Git
 
 📅 Second Day: 17-08-2025
-
 ## Day 2 – HTML Basics 
 1. HTML Introduction
 2. HTML Editors
@@ -113,10 +111,9 @@ npx serve .
 25. HTML responsive web design
 
 📅 Date: 18-08-2025
-
 ## Day 3 – HTML Basics Practice
 
-1. **Introduction to HTML**  
+1. HTML Introduction
     <!DOCTYPE> declaration that defines this is an HTML document  
     <html> root element of an HTML page  
     <head> contains metadata, title, links, scripts  
@@ -146,24 +143,24 @@ npx serve .
 5. HTML Attributes:
    Provide additional information about HTML elements
    All HTML elements can have attributes.
-      a. href (in <a>) → Specifies the URL of the page the link goes to
-         <a href="https://www.sony.com">Visit Sony</a>
-      b.	src (in <img>) → Specifies the path to the image to be displayed
-         <img src="img.png" alt="My Image">
-      c.	width and height (in <img>) → Provide size information for images
-       	<img src="img.png" width="200" height="150">
-      d.	alt (in <img>) → Provides alternate text for an image
-      	<img src="img.png" alt="Profile Picture">
-      e.	style → Adds styles to an element (color, font, size, etc.)
-      	<p style="color:blue;">This is blue text</p>
-      f.	lang (in <html>) → Declares the language of the webpage
-      	<html lang="en">
-      g.	title → Defines extra information about an element (tooltip)
-      	<p title="This is my name">Sony</p>
+      a. "href" attribute specifies the URL of the page the link goes to
+               <a href="https://www.sony.com">Visit Sony</a>
+      b.	"src" attribute specifies the path to the image to be displayed
+                <img src="img.png" alt="My Image">
+      c.	"width" attribute and "height" attribute provide size information for images
+                <img src="img.png" width="200" height="150">
+      d.	"alt" attribute provides alternate text for an image
+      	       <img src="img.png" alt="Profile Picture">
+      e.	"style" attribute adds styles to an element (like color, font, size, etc.)
+      	       <p style="color:blue;">This is blue text</p>
+      f.	"lang" attribute declares the language of the webpage
+      	       <html lang="en">
+      g.	"title" attribute Defines extra information about an element (tooltip)
+      	        <p title="This is my name">Sony</p>
 
-6.Code practiced in Cursor today
-      <!DOCTYPE>
-<HTML>
+6. Code practiced in Cursor today
+    <!DOCTYPE>
+    <HTML>
     <HEAD>
         <TITLE>First Trail</TITLE>
     </HEAD>
@@ -188,32 +185,32 @@ npx serve .
             <a href="https://www.Sony.come">Sony</a><br>
             <img src="im.png" alt="my image">
             
-    </BODY>
-</HTML>
+       </BODY>
+       </HTML>
 
 📅 Date: 19-08-2025
-
 ## Day 4 – HTML Basics Continuation
 
-1.HTML Styles: attribute for styling HTML elements (background-color, color, font-family, font-size, text align)
+Today I practiced more HTML elements and attributes.  
+Here are the topics I covered:
+  1. Headings <h1> to <h6> with "styles"
+  2. Text formatting tags: <b>, <i>, <em>, <small>, <sub>, <sup>, <u>, <s>, <mark>
+  3. Font styles and alignment using the "style" attribute
+  4. Line breaks <br> and horizontal rules <hr>
+  5. Hyperlinks <a> with "href" attribute
+  6. Images <img> with "src", "alt", "height", "width" attributes
+  7. Title attribute with 'single' and "double" quotes
+  8. Preformatted text <pre>
+  9.  Quotations <q>
+  10. Abbreviations <abbr>
+  11. Address information <address>
+  12. HTML Comments <!-- comments -->
+  13. Borders for elements using "style"
+      
+  14. I made some changes to yesterday's code and learned a few more HTML elements and attributes 
 
-2.HTML Quotation
-     a.<abbr>	Defines an abbreviation
-     b.<address>	Defines contact information
-     c.<q>	Defines a short inline quotation
-
-3.HTML Formatting (<b> <strong> <i> <em> <mark> <small> <del> <sub> <sup>)
-
-4.HTML comments: they are not displayed in the browser, but they can help document your HTML source code.
-              <!-- Write your comments here -->
-
-5. HTML Colors: HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values
-    Border Color : we can set the color of borders
-    example: <h1 style="border:1px solid blue;">Hello Sweet Home</h1>
-
-6.I made some changes to yesterday's code and learned a few more HTML elements and attributes 
-        <!DOCTYPE html>
-<HTML lang="en">
+    <!DOCTYPE html>
+    <HTML lang="en">
     <HEAD>
         <TITLE>First Trail</TITLE>
     </HEAD>
@@ -236,13 +233,13 @@ npx serve .
         <P style="color:brown"> <mark>This is a marked paragraph</mark></P>
         <P style="font-family:courier">Hi Hello Namaste</P>
         <p style="text-align:center; color:blue">Centered paragraph</p>
-        <P style="color:black">This paragraph is for understanding break concept This paragraph is for understanding break concept This paragraph is for understanding break concept This paragraph is for understanding break concept 
+        <P style="color:black">This paragraph is for understanding break concept This paragraph is for understanding break concept This paragraph is for understanding break concept This               paragraph is for understanding break concept 
             <br> This paragraph is for understanding break concept <br>
-            This paragraph is for understanding break concept This paragraph is for understanding break concept This paragraph is for understanding break concept This paragraph is for understanding break concept</P>
+            This paragraph is for understanding break concept This paragraph is for understanding break concept This paragraph is for understanding break concept This paragraph is for                     understanding break concept</P>
             <p style="color:darkgreen">Hey, I am Sony, Please refer below for my webiste link</p>
             <a href="https://www.Sony.come">Sony</a><br>
             <hr>
-            <img src="D:\FullStackDevelopment\HTMLProject\BasicFullStackIntroduction\myfirsthtml\images\WhatsApp Image 2025-08-19 at 19.34.44_3025bcf1.jpg" alt="my image" height="250" width="150">
+            <img src="D:\FullStackDevelopment\HTMLProject\BasicFullStackIntroduction\myfirsthtml\images\WhatsApp Image 2025-08-19 at 19.34.44_3025bcf1.jpg" alt="my image" height="250"                    width="150">
 
             <p title='Sony "Cute" Girl'>Sony with double quotes</p>
             <p title="Sony 'Cute' Girl">Sony with single quotes</p>
@@ -268,7 +265,7 @@ npx serve .
 
                 <h1 style="border:1px solid blue;">Hello Sweet Home</h1>
                
-    </BODY>
-</HTML>
+               </BODY>
+               </HTML>
 
       

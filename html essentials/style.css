@@ -1,0 +1,71 @@
+/* General Page Style */
+body {
+    background-color: #232222;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Headings */
+h1 {
+    color: rgb(245, 247, 243);
+    font-family: Calibri, sans-serif;
+    font-size: 50px;
+    border: 2px solid whitesmoke;
+    padding: 20px;
+    margin: 40px auto;
+    text-align: center;
+    border-radius: 10px; /* smoother corners */
+}
+
+h2 {
+    color: bisque;
+    margin-top: 30px;
+}
+
+/* Paragraphs */
+p {
+    color: rgb(214, 204, 193);
+    font-family: "Times New Roman", serif;
+    font-size: 20px;
+    line-height: 1.6; /* better readability */
+}
+
+/* Links */
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px; /* rounded buttons */
+    transition: background-color 0.3s; /* smooth hover effect */
+}
+
+a:hover, a:active {
+    background-color: #d32f2f;
+}
+
+/* Table */
+table {
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid wheat;
+    padding: 10px;
+}
+
+th {
+    background-color: yellowgreen;
+    color: black;
+}
+
+td {
+    background-color: palevioletred;
+    color: white;
+}

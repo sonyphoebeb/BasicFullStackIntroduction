@@ -195,7 +195,74 @@ Today I practiced more HTML elements and attributes.
 Here are the topics I covered:
   1. Headings <h1> to <h6> with "styles"
   2. Text formatting tags: <b>, <i>, <em>, <small>, <sub>, <sup>, <u>, <s>, <mark>
-  
+  3. Font styles and alignment using the "style" attribute
+  4. Line breaks <br> and horizontal rules <hr>
+  5. Hyperlinks <a> with "href" attribute
+  6. Images <img> with "src", "alt", "height", "width" attributes
+  7. Title attribute with 'single' and "double" quotes
+  8. Preformatted text <pre>
+  9.  Quotations <q>
+  10. Abbreviations <abbr>
+  11. Address information <address>
+  12. HTML Comments <!-- comments -->
+  13. Borders for elements using "style"
+      
+  14. I made some changes to yesterday's code and learned a few more HTML elements and attributes 
+
+    <!DOCTYPE html>
+    <HTML lang="en">
+    <HEAD>
+        <TITLE>First Trail</TITLE>
+    </HEAD>
+    <BODY style="background-color: gray;">
+        <H1 style="font-size:60px;">Hello World</H1>
+        <H2 style="background-color: black; color:pink">Heading 2 </H2>
+        <H3 style="color:orange">Heading 3 </H3>
+        <H4 style="color:blue">Heading 4 </H4>
+        <H5 style="color:green">Heading 5 </H5>
+        <H6 style="color:black">Heading 6 </H6>
+        
+        <P style="color:orange">I am normal paragraph</P>
+        <P style="color:blue"><b>This is a bold paragraph </b></P>
+        <P style="color:green"><i>This is an italic paragraph</i></P>
+        <em>This is an emphasized text</em><br><p></p>
+        <small>This is small text</small>
+        <p>This is <sub>subscripted</sub> and this is <sup>superscripted</sup></p>
+        <P style="color:black; background-color:white"><u>This is an underlined paragraph with bg clur</u></P>
+        <P style="color:purple; font-size:50px;"><s>This is a strike paragraph</s></P>
+        <P style="color:brown"> <mark>This is a marked paragraph</mark></P>
+        <P style="font-family:courier">Hi Hello Namaste</P>
+        <p style="text-align:center; color:blue">Centered paragraph</p>
+        <P style="color:black">This paragraph is for understanding break concept This paragraph is for understanding break concept This paragraph is for understanding break concept This               paragraph is for understanding break concept 
+            <br> This paragraph is for understanding break concept <br>
+            This paragraph is for understanding break concept This paragraph is for understanding break concept This paragraph is for understanding break concept This paragraph is for                     understanding break concept</P>
+            <p style="color:darkgreen">Hey, I am Sony, Please refer below for my webiste link</p>
+            <a href="https://www.Sony.come">Sony</a><br>
+            <hr>
+            <img src="D:\FullStackDevelopment\HTMLProject\BasicFullStackIntroduction\myfirsthtml\images\WhatsApp Image 2025-08-19 at 19.34.44_3025bcf1.jpg" alt="my image" height="250"                    width="150">
+
+            <p title='Sony "Cute" Girl'>Sony with double quotes</p>
+            <p title="Sony 'Cute' Girl">Sony with single quotes</p>
+            <pre style="background-color:black; color:white" "width>
+                Hi, My name is Sony.
+                Im a btech graduate in It from KMIT.
+                Im currently working as a content reviewer @TechM.
+            </pre>
+            <p>I want to tell a quaotation <q style="color:aliceblue;">A friend in need is a friend indeed</q></p>
+            <p>The <abbr title="OTT Platform" style="color: brown;">Netflix </abbr>was founded in 1997.</p>
+            <hr>
+            <address style="color: antiquewhite;">
+                Written by Sony.<br> 
+                Visit us at:<br>
+                www.sony.com<br>
+                2-19, Ypl<br>
+                AP
+                </address>
+
+                <p>This is a paragraph.</p>
+                <!-- This is another paragraph -->
+                <p>This is a paragraph too.</p>
+
                 <h1 style="border:1px solid blue;">Hello Sweet Home</h1>
                
                </BODY>

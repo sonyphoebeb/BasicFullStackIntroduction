@@ -1,0 +1,49 @@
+# 🌟 Sony's Portfolio Website  
+
+This is my personal **portfolio website** built with **HTML + CSS** to showcase my skills, projects, and contact details.  
+
+---
+
+## 📌 Pages  
+
+- 🏠 **Home** – About me + CV link  
+- 💼 **Projects** – Dummy & real projects with descriptions  
+- ⚡ **Skills** – Progress bars (HTML, CSS, etc.)  
+- 📬 **Contact** – Social media & email with icons  
+
+---
+
+## 🛠️ Tech Stack  
+
+- **HTML5**  
+- **CSS3** (custom, no frameworks)  
+- **Font Awesome** (for icons)  
+
+---
+
+## 🚀 How to Run  
+
+1. Open the project folder in **Cursor** or any editor.  
+2. Right-click `index.html` → **Open with Live Server** (or just open in browser).  
+3. Navigate between pages:  
+   - `index.html`  
+   - `projects.html`  
+   - `skills.html`  
+   - `contact.html`  
+
+---
+
+## 📄 CV  
+
+📌 [Download My CV](./resume.pdf) *(make sure your `resume.pdf` is in the project folder)*  
+
+---
+
+## 📧 Contact  
+
+- ✉️ Email: sonyphoebe691@gmail.com  
+- 💻 GitHub: [github.com/sonyphoebeb](https://github.com/sonyphoebeb)  
+- 🔗 LinkedIn: [linkedin.com/in/sony-phoebe-93a251289](https://www.linkedin.com/in/sony-phoebe-93a251289)  
+
+---
+✨ Built with passion for coding, design, and creating impactful digital solutions.  

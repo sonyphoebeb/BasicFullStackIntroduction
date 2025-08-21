@@ -308,6 +308,43 @@ Here are the topics I covered:
 
 6. Code updated with Day 5 practice.   
 
+📅 Date: 21-08-2025
+# Day 6 – HTML & CSS Practice
+
+🌐 Personal Portfolio - Sony Phoebe
+This is my personal portfolio website built using HTML and CSS.  
+It showcases my projects, skills, and contact details, with a clean and responsive design.
+
+🚀 Features
+- 📄 Home Page – Introduction and overview  
+- 🛠 Projects Page – Showcases my projects with descriptions  
+- 📊 Skills Page – Skillset represented with percentage bars  
+- ✉️ Contact Page – Links to email, GitHub, and LinkedIn  
+- 🎨 Modern and responsive styling  
+
+ 🛠 Tech Stack
+- HTML
+- CSS
+- Font Awesome(for icons)
+
+📂 Project Structure
+.
+├── index.html # Home page
+├── projects.html # Projects page
+├── skills.html # Skills page
+├── contact.html # Contact page
+├── style.css # Stylesheet
+└── README.md # Documentation
+
+ 🌍 Deployment
+The portfolio is deployed on *Vercel*  
+🔗 [Live Demo](https://vercel.com/docs/builds/configure-a-build#root-directory)  
+
+ 📧 Contact
+- Email: sonyphoebe691@gmail.com  
+- GitHub: [sonyphoebeb](https://github.com/sonyphoebeb)  
+- LinkedIn: [Sony Phoebe](https://www.linkedin.com/in/sony-phoebe-93a251289)  
+
     
 
             

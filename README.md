@@ -131,8 +131,7 @@
 Today I practiced more HTML elements and attributes.  
 Here are the topics I covered:
   1. Headings <h1> to <h6> with "styles"
-  2. Text formatting tags: <b>, <i>, <em>, <small>, <sub>, <sup>, <u>, <s>, <mark>
-  3. Font styles and alignment using the "style" attribute
+  
   4. Line breaks <br> and horizontal rules <hr>
   5. Hyperlinks <a> with "href" attribute
   6. Images <img> with "src", "alt", "height", "width" attributes

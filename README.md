@@ -289,7 +289,7 @@ The portfolio is deployed on *Vercel*
 Today I revised all the HTML topics I learned so far and practiced related exercises on **W3Schools**.  
 I did not write new code today but focused on strengthening my concepts.  
 
-## ✅ Topics Revised
+# ✅ Topics Revised
 1. HTML Introduction & Editors  
 2. HTML Basic Structure  
 3. HTML Elements & Attributes  
@@ -310,12 +310,12 @@ I did not write new code today but focused on strengthening my concepts.
 18. HTML Layout  
 19. HTML Responsive Design  
 
-## 📝 Practice Work
+# 📝 Practice Work
 - Solved **W3Schools exercises** for all the above topics.  
 - Revised syntax, attributes, and usage for each HTML element.  
 - Focused on clarity of concepts instead of coding new examples.  
 
-## 🚀 Summary
+# 🚀 Summary
 Today’s session was mainly about **revision + practice exercises** to strengthen the foundation of HTML.  
 I will continue with coding practice and new topics from tomorrow.
 

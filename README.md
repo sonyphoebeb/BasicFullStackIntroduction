@@ -318,6 +318,36 @@ I did not write new code today but focused on strengthening my concepts.
 Today’s session was mainly about **revision + practice exercises** to strengthen the foundation of HTML.  
 I will continue with coding practice and new topics from tomorrow.
 
-    
+📅 Date: 26-08-2025  
+# Day 10 – JavaScript Basics  
 
-            
+Today I started with the **fundamentals of JavaScript** and practiced how JS interacts with HTML.  
+I learned how to use `document.getElementById` to manipulate HTML elements dynamically.  
+
+# ✅ Topics Covered
+1. JavaScript can change HTML content (using `innerHTML`).  
+2. JavaScript can change HTML styles (like font size).  
+3. JavaScript can hide HTML content (`display = none`).  
+4. JavaScript can show hidden HTML content (`display = block`).  
+5. Difference between using **single quotes** and **double quotes** in onclick attributes.
+6. Writing JavaScript inside the `<head>` tag.  
+   - Functions defined in head must run after DOM loads (e.g., on button click).  
+7. Writing JavaScript inside the `<body>` tag.  
+   - Functions inside body can run immediately since elements already exist.  
+8. Best practice: placing JavaScript at the **end of body** for performance. 
+
+# 💻 Practice Work
+- Wrote code examples where clicking a button changes text, style, hides, or shows content.  
+- Practiced using both single and double quotes in JavaScript code inside HTML.
+- Created a function inside `<head>` that changes text when a button is clicked.  
+- Created another function inside `<body>` that increases font size of text when a button is clicked.  
+
+# 🚀 Summary
+Learned the **basic DOM manipulations** with JavaScript:
+- Changing text content.  
+- Styling elements.  
+- Hiding and showing HTML dynamically.
+Understood the **importance of script placement**:
+- `<head>` scripts → must wait for elements.  
+- `<body>` scripts → safer, can directly access elements.  
+- Real projects → usually place scripts at the end of body or use external `.js` files. 

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JavaScript Basics</title>
+</head>
+
+<body>
+    <h2>My First JavaScript</h2>
+
+    <!--JS can change the html content-->
+    <!-- using double quotes-->
+    <p id="pDoublequotes">HTML</p>
+    <button onclick="document.getElementById('pDoublequotes').innerHTML='JavaScript'">Click me!</button>
+
+    <!-- using single quotes-->
+    <p id="pSinglequotes">Sony</p>
+    <button onclick='document.getElementById("pSinglequotes").innerHTML="Phoebe"'>Click here</button>
+
+    <!--JS can change the html styles-->
+    <p id="pChangeSize">Hello there!</p>
+    <button onclick="document.getElementById('pChangeSize').style.fontSize='30px'">Click me!</button>
+
+    <!--JS can hide the html content-->
+    <p id="pHideContent">Random Thoughts</p>
+    <button onclick="document.getElementById('pHideContent').style.display='none'">Click me!</button><br><br>
+
+    <!--JS can show the hidden html content-->
+    <p id="pShowContent" style="display: none;">Crazy Writes</p>
+    <button onclick="document.getElementById('pShowContent').style.display='block'">Click me!</button>
+
+</body>
+
+</html>

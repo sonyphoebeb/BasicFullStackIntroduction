@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JavaScript</title>
+
+        <!--script in head-->
+        <script>
+            function ScriptInHead(){
+                document.getElementById("pScriptInHead").innerHTML="Gone";
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <h3>JavaScript in head</h3>
+
+        <p id="pScriptInHead">Hey there!</p>
+        <button type="button" onclick="ScriptInHead()">Try me</button>
+
+        <!--script in body-->
+        <p id="pScriptInBody">Sony</p>
+        <button type="button" onclick="ScriptInBody()">Click me</button>
+
+        <script>
+            function ScriptInBody(){
+                document.getElementById("pScriptInBody").style.fontSize='30px';
+            }
+        </script>
+
+    </body>
+    
+</html>

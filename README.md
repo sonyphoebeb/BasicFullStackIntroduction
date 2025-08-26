@@ -352,6 +352,7 @@ Understood the **importance of script placement**:
 - `<body>` scripts → safer, can directly access elements.  
 - Real projects → usually place scripts at the end of body or use external `.js` files.
 
+
 📅 Date: 26-08-2025
 # Day 11 – JavaScript Basics (Display + Arithmetic Operators)
 Today I practiced different ways to display output in JavaScript and implemented arithmetic operators using functions.

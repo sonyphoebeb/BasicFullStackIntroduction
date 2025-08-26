@@ -353,10 +353,10 @@ Understood the **importance of script placement**:
 - Real projects → usually place scripts at the end of body or use external `.js` files.
 
 📅 Date: 26-08-2025
-Day 11 – JavaScript Basics (Display + Arithmetic Operators)
+# Day 11 – JavaScript Basics (Display + Arithmetic Operators)
 Today I practiced different ways to display output in JavaScript and implemented arithmetic operators using functions.
 
-✅ Topics Covered
+# ✅ Topics Covered
 1. JavaScript Display Methods
      -> innerHTML → Change HTML content dynamically.
      -> innerText → Display plain text inside HTML elements.
@@ -379,12 +379,12 @@ Today I practiced different ways to display output in JavaScript and implemented
        Modulus (Remainder) → %
    Each operator result is displayed dynamically inside a <p> tag.
 
-📝 Practice Work
+# 📝 Practice Work
     -> Built interactive HTML pages with buttons to trigger JS functions.
     -> Connected external JavaScript file (arithmaticOperators.js) to keep code organized.
     -> Practiced taking input values, converting them using Number(), and returning results.
 
-🚀 Summary
+# 🚀 Summary
      -> Today I worked on JavaScript output methods and basic arithmetic operations.
      -> I now understand how to:
            * Show results on the page, in alerts, or in the console.

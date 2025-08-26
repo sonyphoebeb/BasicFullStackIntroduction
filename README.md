@@ -318,7 +318,7 @@ I did not write new code today but focused on strengthening my concepts.
 Today’s session was mainly about **revision + practice exercises** to strengthen the foundation of HTML.  
 I will continue with coding practice and new topics from tomorrow.
 
-📅 Date: 26-08-2025  
+📅 Date: 25-08-2025  
 # Day 10 – JavaScript Basics  
 
 Today I started with the **fundamentals of JavaScript** and practiced how JS interacts with HTML.  
@@ -350,4 +350,48 @@ Learned the **basic DOM manipulations** with JavaScript:
 Understood the **importance of script placement**:
 - `<head>` scripts → must wait for elements.  
 - `<body>` scripts → safer, can directly access elements.  
-- Real projects → usually place scripts at the end of body or use external `.js` files. 
+- Real projects → usually place scripts at the end of body or use external `.js` files.
+
+
+📅 Date: 26-08-2025
+# Day 11 – JavaScript Basics (Display + Arithmetic Operators)
+Today I practiced different ways to display output in JavaScript and implemented arithmetic operators using functions.
+
+# ✅ Topics Covered
+1. JavaScript Display Methods
+     -> innerHTML → Change HTML content dynamically.
+     -> innerText → Display plain text inside HTML elements.
+     -> document.write() → Write directly to the page (but removes existing content if used after load).
+     -> window.alert() → Display content in an alert popup.
+     -> console.log() → Log output to the browser console.
+     -> window.print() → Print the current page.
+
+2. JavaScript Statements
+     -> Simple statements like a = 5; b = 6; c = a + b;
+     -> Grouping statements inside functions and executing them via button click.
+     -> Undefined variables (let myName;) → results in undefined.
+
+3. Arithmetic Operators
+   -> Implemented functions to perform operations on two input numbers:
+       Addition → +
+       Subtraction → -
+       Multiplication → *
+       Division → /
+       Modulus (Remainder) → %
+   Each operator result is displayed dynamically inside a <p> tag.
+
+# 📝 Practice Work
+    -> Built interactive HTML pages with buttons to trigger JS functions.
+    -> Connected external JavaScript file (arithmaticOperators.js) to keep code organized.
+    -> Practiced taking input values, converting them using Number(), and returning results.
+
+# 🚀 Summary
+     -> Today I worked on JavaScript output methods and basic arithmetic operations.
+     -> I now understand how to:
+           * Show results on the page, in alerts, or in the console.
+           * Perform calculations with input values using functions.
+           * Keep JS code structured by using external .js files.
+
+Tomorrow, I will continue with JavaScript Data Types and Operators in detail.  
+
+  

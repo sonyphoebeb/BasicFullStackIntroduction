@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JS Basics</title>
+    <script src="arithmaticOperators.js"></script>
+</head>
+
+<body>
+
+    <!--JS Statements-->
+    <p id="pAddNums"></p>
+
+    <script>
+        let a, b, c;
+        a = 5;
+        b = 6;
+        c = a + b;
+        document.getElementById("pAddNums").innerHTML = c;
+    </script>
+
+    <!--statements grouped together in blocks-->
+    <button type="button" onclick="myFunction()">Click Me!</button>
+    <p id="p1"></p>
+    <p id="p2"></p>
+
+    <script>
+        function myFunction() {
+            document.getElementById("p1").innerHTML = "Hello There!";
+            document.getElementById("p2").innerHTML = "How are you?";
+        }
+    </script>
+
+    <!--undefined value-->
+    <p id="pUndef"></p>
+
+    <script>
+        let myName;
+        document.getElementById("pUndef").innerHTML = myName;
+    </script>
+
+    <!-- Arithmatic Operators -->
+    <label>Enter your first number</label>
+    <input type="text" id="txtNum1"><br><br>
+
+    <label>Enter your second number</label>
+    <input type="text" id="txtNum2"><br><br>
+
+    <button type="button" onclick="addNums(txtNum1.value,txtNum2.value)">Sum</button>
+    <button type="button" onclick="SubNums(txtNum1.value,txtNum2.value)">Difference</button>
+    <button type="button" onclick="MulNums(txtNum1.value,txtNum2.value)">Product</button>
+    <button type="button" onclick="DivNums(txtNum1.value,txtNum2.value)">Quotient</button>
+    <button type="button" onclick="ModNums(txtNum1.value,txtNum2.value)">Remainder</button>
+
+    <p id="pResult"></p>
+
+</body>
+
+</html>

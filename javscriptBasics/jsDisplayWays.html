@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Display Possibilities</title>
+    </head>
+    <body>
+
+        <!-- JS Display using innerHTML-->
+        <h1>JS Display Possibilities</h1>
+        <p id="pinnerHtml">This is a paragraph</p>
+        <script>
+            document.getElementById("pinnerHtml").innerHTML="<h2>JS Display using innerHTML</h2>";
+        </script>
+
+        <!-- JS Display using innerText-->
+        <p id="pinnerText">This is paragraph 2</p>
+        <script>
+            document.getElementById("pinnerText").innerText="JS Display using innerText";
+        </script>
+
+        <!-- JS Display using document.write-->
+        <p><h4>JS Display using document.write</h4></p>
+        <script>
+            document.write("Hello there!");
+        </script><br>
+        <!--Using document.write() after an HTML document is loaded, will delete all existing HTML-->
+        <p>Clicking the below button will delete all the html data</p>
+        <button type="btn" onclick="document.write('HTML data deleted')" style="background-color: aquamarine;">Try it</button>
+        
+        <!-- JS Display using window.alert-->
+        <script>
+            alert("Hello, I am a sample alert to display the content");
+        </script>
+
+        <!-- JS Display using console.log-->
+        <script>
+            console.log(10+20);
+        </script>
+
+        <!-- JS print method-->
+        <h4>The window.print() Method</h4>
+        <p>Click the below button to print the current page</p>
+        <button onclick="window.print()">Print this page</button>
+       
+    </body>
+</html>

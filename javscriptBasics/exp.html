@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        // Show which key is pressed (keydown)
+        function showKeyDown(event) {
+            document.getElementById("keyInfo").innerHTML = "Key Down: " + event.key;
+        }
+
+        // Show which key is released (keyup)
+        function showKeyUp(event) {
+            document.getElementById("keyInfo").innerHTML = "Key Up: " + event.key;
+        }
+
+        function showName() {
+            let name = document.getElementById("txtName.value");
+            document.getElementById("result").innerHTML = "Hello, " + name;
+        }
+    </script>
+</head>
+
+<body>
+    <h3>Keydown & Keyup Example 2</h3>
+    <input type="text" onkeydown="showKeyDown(event)" onkeyup="showKeyUp(event)" placeholder="Type something..">
+    <p id="keyInfo"></p>
+
+    <h3>onchange with textbox</h3>
+    Enter your name: <input type="text" id="txtName" onchange="showName()">
+    <p id="result"></p>
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>oninput Example</title>
+  <script>
+    function showInput() {
+      let value = document.getElementById("myInput").value;
+      document.getElementById("inputDemo").innerHTML = value;
+    }
+  </script>
+</head>
+<body>
+
+  <!-- oninput -->
+  <h3>oninput Event</h3>
+  <input type="text" id="myInput" oninput="showInput()" placeholder="Type something">
+  <p id="inputDemo"></p>
+
+</body>
+</html>

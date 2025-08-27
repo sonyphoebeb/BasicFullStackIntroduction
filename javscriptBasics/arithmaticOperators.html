@@ -10,7 +10,6 @@
 
     <!--JS Statements-->
     <p id="pAddNums"></p>
-
     <script>
         let a, b, c;
         a = 5;
@@ -23,7 +22,6 @@
     <button type="button" onclick="myFunction()">Click Me!</button>
     <p id="p1"></p>
     <p id="p2"></p>
-
     <script>
         function myFunction() {
             document.getElementById("p1").innerHTML = "Hello There!";
@@ -31,9 +29,8 @@
         }
     </script>
 
-    <!--undefined value-->
+    <!--undefined value (JS cannot allow a variable to be undefined)-->
     <p id="pUndef"></p>
-
     <script>
         let myName;
         document.getElementById("pUndef").innerHTML = myName;
@@ -47,10 +44,12 @@
     <input type="text" id="txtNum2"><br><br>
 
     <button type="button" onclick="addNums(txtNum1.value,txtNum2.value)">Sum</button>
-    <button type="button" onclick="SubNums(txtNum1.value,txtNum2.value)">Difference</button>
-    <button type="button" onclick="MulNums(txtNum1.value,txtNum2.value)">Product</button>
-    <button type="button" onclick="DivNums(txtNum1.value,txtNum2.value)">Quotient</button>
-    <button type="button" onclick="ModNums(txtNum1.value,txtNum2.value)">Remainder</button>
+    <button type="button" onclick="subNums(txtNum1.value,txtNum2.value)">Difference</button>
+    <button type="button" onclick="mulNums(txtNum1.value,txtNum2.value)">Product</button>
+    <button type="button" onclick="divNums(txtNum1.value,txtNum2.value)">Quotient</button>
+    <button type="button" onclick="modNums(txtNum1.value,txtNum2.value)">Remainder</button>
+    <button type="button" onclick="incNum(txtNum1.value)">Increment</button>
+    <button type="button" onclick="deNum(txtNum1.value)">Decrement</button>
 
     <p id="pResult"></p>
 

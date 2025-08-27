@@ -4,11 +4,11 @@ function addNums(x,y){
     let num1 = Number(x);
     let num2 = Number(y);
     let sum = num1 + num2;
-    document.getElementById("pNumResult").innerHTML = "Sum = " +sum;
+    document.getElementById("pResult").innerHTML = "Sum = " +sum;
 }
 
 //fun to sub two nums
-function SubNums(x,y){
+function subNums(x,y){
     let num1 = Number(x);
     let num2 = Number(y);
     let sub = num1 - num2;
@@ -16,7 +16,7 @@ function SubNums(x,y){
 }
 
 //fun to mul two nums
-function MulNums(x,y){
+function mulNums(x,y){
     let num1 = Number(x);
     let num2 = Number(y);
     let mul = num1 * num2;
@@ -24,7 +24,7 @@ function MulNums(x,y){
 }
 
 //fun to div two nums
-function DivNums(x,y){
+function divNums(x,y){
     let num1 = Number(x);
     let num2 = Number(y);
     let div = num1 / num2;
@@ -32,9 +32,23 @@ function DivNums(x,y){
 }
 
 //fun to mod two nums
-function ModNums(x,y){
+function modNums(x,y){
     let num1 = Number(x);
     let num2 = Number(y);
     let mod = num1 % num2;
     document.getElementById("pResult").innerHTML = "Remainder  = " +mod;
+}
+
+//fun to increment a num
+function incNum(x){
+    let num1 = Number(x);
+    num1++;
+    document.getElementById("pResult").innerHTML = "Increment = " + num1;
+}
+
+//fun to decrement a num
+function deNum(x){
+    let num1 = Number(x);
+    num1--;
+    document.getElementById("pResult").innerHTML = "Decrement = " + num1;
 }

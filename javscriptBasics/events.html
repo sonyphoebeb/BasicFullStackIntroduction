@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Events</title>
+    <script src="events.js"></script>
+</head>
+<body>
+
+    <h1>HTML Events</h1>
+
+    <!-- onclick -->
+    <h3>onclick Event</h3>
+    <button onclick="displayDate()">Click here to see the date and time</button>
+    <p id="pclick"></p>
+
+    <!-- ondblclick -->
+    <h3>ondblclick Event</h3>
+    <button ondblclick="showMyName()">Double click here to know my name</button>
+    <p id="pdblclick"></p>
+
+    <!-- onmouseover & onmouseout -->
+    <h3>onmouseover & onmouseout Events</h3>
+    <button onmouseover="hoverIn()">MouseOver</button>
+    <button onmouseout="hoverOut()">Mouse Out to print Hello</button>
+    <p id="pMouseout"></p>
+
+    <!-- onkeydown & onkeyup -->
+    <h3>onkeyup & onkeydown Events</h3>
+    <input type="text" onkeyup="keyUp(event)" onkeydown="keyDown(event)" placeholder="Type something..">
+    <p id="keyEvent"></p>
+
+    <!-- onchange -->
+    <h3>onchange Event</h3>
+    <select id="technologies" onchange="showChange()">
+        <option value="">--Select your desired technology--</option>
+        <option value="AI">Artificial Intelligence(AI)</option>
+        <option value="ML">Machine Leraning(ML)</option>
+        <option value="CS">Cyber Security</option>
+        <option value="CC">Cloud Computing</option>
+        <option value="BC">Block Chain</option>
+        <option value="IoT">Internet of Things(IoT)</option>
+    </select>
+    <p id="ptechStack"></p>
+
+    <!-- onfocus & onblur -->
+    <h3>onfocus & onblur</h3>
+    <input type="text" id="myInput" onfocus="focusIn()" onblur="focusOut()" placeholder="Click inside and outside">
+
+    <!-- oninput -->
+    <h3>oninput Event</h3>
+    <input type="text" id="myOnInput" oninput="showInput()" placeholder="Type something..">
+    <p id="pInput"></p>
+
+    <!-- onsubmit -->
+    <h3>onsubmit Event</h3>
+    <form onsubmit="return handleSubmit()">
+        <input type="text" placeholder="Your name ?">
+        <button type="submit">Submit</button>
+    </form>
+
+    <p>Resize the browser window or reload the page and check the console.</p>
+
+</body>
+</html>

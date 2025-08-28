@@ -47,8 +47,25 @@ function incNum(x){
 }
 
 //fun to decrement a num
-function deNum(x){
+function decNum(x){
     let num1 = Number(x);
     num1--;
     document.getElementById("pResult").innerHTML = "Decrement = " + num1;
 }
+
+//fun to execute exponentiation operator
+function expoNum(x){
+    let num1 = Number(x);
+    num1 = x**3;
+    document.getElementById("pResult").innerHTML = "Expo = " + num1;
+}
+
+//exp to show Operator precedence
+function opPrecedence(x){
+    let num1 = Number(x);
+    num1 = 100 + 50 * 2;
+    alert("100 + 50 * 2");
+    document.getElementById("pResult").innerHTML = "Operator precedence = " + num1;
+}
+
+

@@ -9,6 +9,7 @@
 <body>
 
     <!--JS Statements-->
+    <h4>JS Statements: exp include initialization + assignment that adds 5+6 and prints 11</h4>
     <p id="pAddNums"></p>
     <script>
         let a, b, c;
@@ -19,6 +20,7 @@
     </script>
 
     <!--statements grouped together in blocks-->
+    <h4>JS grouped Statements</h4>
     <button type="button" onclick="myFunction()">Click Me!</button>
     <p id="p1"></p>
     <p id="p2"></p>
@@ -30,6 +32,7 @@
     </script>
 
     <!--undefined value (JS cannot allow a variable to be undefined)-->
+    <h4>JS doesnt allow let keyword to initialize but not assign </h4>
     <p id="pUndef"></p>
     <script>
         let myName;
@@ -37,6 +40,7 @@
     </script>
 
     <!-- Arithmatic Operators -->
+     <h3>Arithmatic Operators</h3>
     <label>Enter your first number</label>
     <input type="text" id="txtNum1"><br><br>
 
@@ -49,7 +53,12 @@
     <button type="button" onclick="divNums(txtNum1.value,txtNum2.value)">Quotient</button>
     <button type="button" onclick="modNums(txtNum1.value,txtNum2.value)">Remainder</button>
     <button type="button" onclick="incNum(txtNum1.value)">Increment</button>
-    <button type="button" onclick="deNum(txtNum1.value)">Decrement</button>
+    <button type="button" onclick="decNum(txtNum1.value)">Decrement</button>
+    <button type="button" onclick="expoNum(txtNum1.value)">Expo</button>
+
+    <!--Operator precedence-->
+    <h4>Example to show Operator precedence</h4>
+    <button type="button" onclick="opPrecedence(txtNum1.value)">Click me!</button>
 
     <p id="pResult"></p>
 

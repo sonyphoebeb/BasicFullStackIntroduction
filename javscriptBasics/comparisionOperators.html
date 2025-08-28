@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comparison Operators</title>
+    <script src="comparisionOperators.js"></script>
+</head>
+<body>
+    <h1>Comparison Operators</h1>
+
+    <input type="text" id="num1" placeholder="Enter first value">
+    <input type="text" id="num2" placeholder="Enter second value">
+    <br><br>
+
+    <button onclick="normalCompare(num1.value, num2.value)">==</button>
+    <button onclick="strictCompare(num1.value, num2.value)">===</button>
+    <button onclick="notEqualCompare(num1.value, num2.value)">!=</button>
+    <button onclick="strictNotEqualCompare(num1.value, num2.value)">!==</button>
+    <button onclick="greaterCompare(num1.value, num2.value)">></button>
+    <button onclick="lessCompare(num1.value, num2.value)"><</button>
+    <button onclick="greaterEqualCompare(num1.value, num2.value)">>=</button>
+    <button onclick="lessEqualCompare(num1.value, num2.value)"><=</button>
+
+    <p id="result"></p>
+</body>
+</html>

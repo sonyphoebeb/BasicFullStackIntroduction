@@ -1,0 +1,174 @@
+/* Netflix Color Palette */
+:root {
+    --netflix-red: #E50914;
+    --netflix-red-hover: #F40612;
+    --netflix-black: #000000;
+    --netflix-dark-gray: #141414;
+    --netflix-gray: #333333;
+    --netflix-light-gray: #808080;
+    --netflix-white: #FFFFFF;
+    --netflix-text-gray: #B3B3B3;
+    --netflix-border-gray: #404040;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--netflix-black);
+    color: var(--netflix-white);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Typography */
+h1 {
+    color: var(--netflix-red);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    color: var(--netflix-text-gray);
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* Links */
+a {
+    color: var(--netflix-red);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--netflix-red-hover);
+    text-decoration: underline;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Lists */
+ul, ol {
+    background-color: var(--netflix-dark-gray);
+    padding: 20px 40px;
+    border-radius: 8px;
+    margin: 15px 0;
+    border: 1px solid var(--netflix-border-gray);
+}
+
+li {
+    color: var(--netflix-text-gray);
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--netflix-dark-gray);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+th {
+    background-color: var(--netflix-red);
+    color: var(--netflix-white);
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+td {
+    padding: 12px 15px;
+    color: var(--netflix-text-gray);
+    border-bottom: 1px solid var(--netflix-border-gray);
+}
+
+tr:hover {
+    background-color: var(--netflix-gray);
+}
+
+/* Navigation */
+nav {
+    background-color: var(--netflix-dark-gray);
+    padding: 15px 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--netflix-border-gray);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    color: var(--netflix-text-gray);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    color: var(--netflix-red);
+    background-color: var(--netflix-gray);
+}
+
+/* Container for better layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    table {
+        font-size: 0.9rem;
+    }
+    
+    th, td {
+        padding: 10px;
+    }
+}

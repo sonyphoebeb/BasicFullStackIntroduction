@@ -1,0 +1,23 @@
+{
+  "name": "basic-fullstack-introduction",
+  "version": "1.0.0",
+  "description": "A basic fullstack introduction project with Netflix-inspired styling",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build required'",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "html",
+    "css",
+    "netflix",
+    "static-site",
+    "fullstack"
+  ],
+  "author": "sonyphoebeb",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}

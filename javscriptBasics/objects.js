@@ -1,9 +1,5 @@
 // 1. Object Literal
-let phone = {
-    brand: "Apple",
-    model: "iPhone 15",
-    price: 120000
-  };
+let phone = {brand: "Apple", model: "iPhone 15", price: 120000};
   
   function showLiteral() {
     document.getElementById("objLiteral").innerHTML =

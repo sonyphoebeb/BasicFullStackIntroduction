@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Arrays</title>
+  <script src="arrays.js"></script>
+</head>
+<body>
+  <h1>JavaScript Arrays</h1>
+
+  <p><strong>Array in use:</strong> <span id="myArray"></span></p>
+  <p id="result"></p>
+
+  <h2>Array Basics</h2>
+  <button onclick="showArray()">Show Array</button>
+  <button onclick="arrayLength()">Length</button>
+  <button onclick="getFirst()">First Element</button>
+  <button onclick="getLast()">Last Element</button>
+
+  <h2>Modify Array</h2>
+  <input type="text" id="newItem" placeholder="Enter new item">
+  <button onclick="addItem()">Push (Add at End)</button>
+  <button onclick="removeItem()">Pop (Remove Last)</button>
+  <button onclick="shiftItem()">Shift (Remove First)</button>
+  <button onclick="unshiftItem()">Unshift (Add at Start)</button>
+
+  <h2>Array Methods</h2>
+  <button onclick="joinItems()">Join()</button>
+  <button onclick="toStringItems()">toString()</button>
+  <button onclick="sortItems()">Sort()</button>
+  <button onclick="reverseItems()">Reverse()</button>
+
+  <h2>Loop through Array</h2>
+  <button onclick="forLoop()">For Loop</button>
+  <button onclick="forEachLoop()">forEach()</button>
+</body>
+</html>

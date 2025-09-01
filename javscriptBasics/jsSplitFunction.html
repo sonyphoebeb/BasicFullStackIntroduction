@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Split Function</title>
+  <script src="jsSplitFunction.js"></script>
+</head>
+<body>
+  <h2>JavaScript Split Function</h2>
+
+  <!-- Input for patient data -->
+  <label>Enter a string:</label>
+  <input type="text" id="inputString">
+  <button onclick="loadPatients()">Click here to load patients data</button>
+
+  <!-- Dropdown to select patient -->
+  <label>Select Patient:</label>
+  <select id="patientDropdown" onchange="showPatientData()"></select><br><br>
+
+  <!-- Display patient data -->
+  <p id="patientData"></p>
+
+  <!-- Input for index -->
+  <label>Enter Index:</label>
+  <input type="number" id="indexInput" placeholder="Enter index (e.g. 0)">
+  <button onclick="showIndexValue()">Get Value</button>
+
+  <p id="indexResult"></p>
+</body>
+</html>

@@ -1,57 +1,58 @@
-let patients = []; // store patient arrays
+let patients = []; 
 let selectedPatient = [];
 
-// Convert input into array of patients
-function loadPatients() {
-  let input = document.getElementById("inputString").value;
-  patients = []; // reset array
+// Static patients input (moved from HTML to JS)
+let input = "1:2:2:3:4:4:5;2:33:3:2:4:2:2;12:3:23:1:3:1:3;32:3:2:3:1:3:1;1:33:1:3:2:42:2;32:3:11:33:11:33:11;34:1:31:1:3:1:1;12:2:2:2:2:3:2";
 
-  // Convert string into array of patient arrays using for loop
-  let rawPatients = input.split(";");
-  for (let i = 0; i < rawPatients.length; i++) {
-    patients.push(rawPatients[i].split(":"));
-  }
+// Load patients into dropdown
+window.onload = function () {
+  patients = input.split(";").map(p => p.split(":"));
 
   let dropdown = document.getElementById("patientDropdown");
-  dropdown.innerHTML = ""; // clear previous options
+  dropdown.innerHTML = '<option value="" disabled selected>Select Patient</option>';
 
-  // Add default option
-  let defaultOption = document.createElement("option");
-  defaultOption.value = "";
-  defaultOption.text = "Select Patient";
-  dropdown.appendChild(defaultOption);
-
-  // Add patients (p1, p2, p3...) using for loop
   for (let i = 0; i < patients.length; i++) {
     let option = document.createElement("option");
     option.value = i;
     option.text = "p" + (i + 1);
     dropdown.appendChild(option);
   }
-}
+};
 
-// Show patient data when selected
+// Populate index dropdown when patient is selected
 function showPatientData() {
   let index = document.getElementById("patientDropdown").value;
-
-  if (index === "") {
-    document.getElementById("patientData").textContent = "";
-    document.getElementById("indexResult").textContent = "";
-    return;
-  }
+  if (index === "") return;
 
   selectedPatient = patients[index];
-  document.getElementById("patientData").textContent = selectedPatient.join(":");
   document.getElementById("indexResult").textContent = "";
+
+  // Reset index dropdown
+  let indexDropdown = document.getElementById("indexDropdown");
+  indexDropdown.innerHTML = '<option value="" disabled selected>Select Index</option>';
+
+  for (let i = 0; i < selectedPatient.length; i++) {
+    let option = document.createElement("option");
+    option.value = i;
+    option.text = i;
+    indexDropdown.appendChild(option);
+  }
+
+  // Disable button until index is selected
+  document.getElementById("getValueBtn").disabled = true;
+
+  indexDropdown.onchange = function () {
+    document.getElementById("getValueBtn").disabled = false;
+  };
 }
 
-// Show specific element of patient array
+// Show value at selected index
 function showIndexValue() {
-  let idx = document.getElementById("indexInput").value;
-  if (selectedPatient.length > idx && idx >= 0) {
-    document.getElementById("indexResult").textContent =
-      `Value at index ${idx} is ${selectedPatient[idx]}`;
-  } else {
-    document.getElementById("indexResult").textContent = "Invalid index!";
+  let idx = document.getElementById("indexDropdown").value;
+  if (idx === "") {
+    document.getElementById("indexResult").textContent = "Please select an index!";
+    return;
   }
+  document.getElementById("indexResult").textContent =
+    `Value at index ${idx} is ${selectedPatient[idx]}`;
 }

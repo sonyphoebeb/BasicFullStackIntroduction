@@ -8,22 +8,23 @@
   <h2>JavaScript Split Function</h2>
 
   <!-- Input for patient data -->
-  <label>Enter a string:</label>
-  <input type="text" id="inputString">
-  <button onclick="loadPatients()">Click here to load patients data</button>
+  <label>Enter Patients Data:</label>
+  <input type="text" id="inputString" placeholder="Enter patients data">
+  <button onclick="loadPatients()">Load Patients Data</button>
+  <br><br>
 
   <!-- Dropdown to select patient -->
   <label>Select Patient:</label>
-  <select id="patientDropdown" onchange="showPatientData()"></select><br><br>
+  <select id="patientDropdown" onchange="showPatientData()"></select>
+  <br>
 
   <!-- Display patient data -->
   <p id="patientData"></p>
 
   <!-- Input for index -->
   <label>Enter Index:</label>
-  <input type="number" id="indexInput" placeholder="Enter index (e.g. 0)">
+  <input type="number" id="indexInput" placeholder="Enter index">
   <button onclick="showIndexValue()">Get Value</button>
-
   <p id="indexResult"></p>
 </body>
 </html>

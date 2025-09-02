@@ -15,23 +15,81 @@
     <p id="rawResult"></p>
 
     <!-- FromCodePoint String Method-->
-     <label>Enter unicode</label>
-     <input type="number" id="inputUnicode">
+    <label>Enter unicode</label>
+    <input type="number" id="inputUnicode">
     <button onclick="fromCodePointStringMethod(inputUnicode.value)">FromCodePoint</button>
     <p id="unicodeResult"></p>
 
     <!-- Escape & Unescape String Method-->
     <label>Enter a string</label>
     <input type="text" id="inputString">
-   <button onclick="escapeStringMethod(inputString.value)">Escape</button>
-   <button onclick="unEscapeStringMethod(inputString.value)">UnEscape</button>
-   <p id="escapeResult"></p>
+    <button onclick="escapeStringMethod(inputString.value)">Escape</button>
+    <button onclick="unEscapeStringMethod(inputString.value)">UnEscape</button>
+    <p id="escapeResult"></p>
 
-   <!-- Eval String Method-->
-   <label>Enter expression</label>
-   <input type="text" id="inputStr">
-  <button onclick="evalStringMethod(inputStr.value)">Evaluate</button>
-  <p id="evalResult"></p>
+    <!-- Eval String Method-->
+    <label>Enter expression</label>
+    <input type="text" id="inputStr">
+    <button onclick="evalStringMethod(inputStr.value)">Evaluate</button>
+    <p id="evalResult"></p>
+
+    <!-- String Literal Method-->
+    <label>Enter your name : </label>
+    <input type="text" id="name">
+    <button onclick="templateLiteralMethod(document.getElementById('name').value)">Template Literal</button>
+    <p id="literalResult"></p>
+
+    <!-- Multi Line String Method-->
+    <button onclick="multiLineString()">Multi Line</button>
+    <p id="multiLineResult"></p>
+
+    <!-- String New String Methods -->
+    <label>Enter text for New String: </label>
+    <input type="text" id="txtNewString">
+    <button onclick="stringNewStringMethods(txtNewString.value)">Run</button>
+    <p id="resultNewString"></p>
+
+    <!-- String String New String Methods -->
+    <label>Enter text for String String New String: </label>
+    <input type="text" id="txtStringNew">
+    <button onclick="stringStringNewStringMethods(txtStringNew.value)">Run</button>
+    <p id="resultStringNew"></p>
+
+    <!-- String String String Literal -->
+    <label>Enter text for Triple Literal: </label>
+    <input type="text" id="txtTripleLiteral">
+    <button onclick="stringStringStringLiteralStringMethods(txtTripleLiteral.value)">Triple Literal</button>
+    <p id="resultTripleLiteral"></p>
+
+    <!-- String String String Template -->
+    <label>Enter text for Triple Template: </label>
+    <input type="text" id="txtTripleTemplate">
+    <button onclick="stringStringStringTemplateStringMethods(txtTripleTemplate.value)">Triple Template</button>
+    <p id="resultTripleTemplate"></p>
+
+    <!-- String String String Escape -->
+    <label>Enter text for Triple Escape: </label>
+    <input type="text" id="txtTripleEscape">
+    <button onclick="stringStringStringEscapeStringMethods(txtTripleEscape.value)">Triple Escape</button>
+    <p id="resultTripleEscape"></p>
+
+    <!-- String String String Unescape -->
+    <label>Enter text for Triple Unescape: </label>
+    <input type="text" id="txtTripleUnescape">
+    <button onclick="stringStringStringUnescapeStringMethods(txtTripleUnescape.value)">Triple Unescape</button>
+    <p id="resultTripleUnescape"></p>
+
+    <!-- String String String Eval -->
+    <label>Enter JS expression for Triple Eval: </label>
+    <input type="text" id="txtTripleEval" placeholder="e.g., 20/2">
+    <button onclick="stringStringStringEvalStringMethods(txtTripleEval.value)">Triple Eval</button>
+    <p id="resultTripleEval"></p>
+
+    <!-- String String String New String -->
+    <label>Enter text for Triple New String: </label>
+    <input type="text" id="txtTripleNewString">
+    <button onclick="stringStringStringNewStringMethods(txtTripleNewString.value)">Triple New String</button>
+    <p id="resultTripleNewString"></p>
 
 </body>
 

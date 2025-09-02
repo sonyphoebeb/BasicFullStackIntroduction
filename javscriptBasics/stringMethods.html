@@ -9,10 +9,29 @@
 
 <body>
     <h3>JavaScript String Methods Practice</h3>
-    
-    <!-- Raw -->
+
+    <!-- Raw String Method-->
     <button onclick="rawStringMethod()">Raw String Method</button>
     <p id="rawResult"></p>
+
+    <!-- FromCodePoint String Method-->
+     <label>Enter unicode</label>
+     <input type="number" id="inputUnicode">
+    <button onclick="fromCodePointStringMethod(inputUnicode.value)">FromCodePoint</button>
+    <p id="unicodeResult"></p>
+
+    <!-- Escape & Unescape String Method-->
+    <label>Enter a string</label>
+    <input type="text" id="inputString">
+   <button onclick="escapeStringMethod(inputString.value)">Escape</button>
+   <button onclick="unEscapeStringMethod(inputString.value)">UnEscape</button>
+   <p id="escapeResult"></p>
+
+   <!-- Eval String Method-->
+   <label>Enter expression</label>
+   <input type="text" id="inputStr">
+  <button onclick="evalStringMethod(inputStr.value)">Evaluate</button>
+  <p id="evalResult"></p>
 
 </body>
 

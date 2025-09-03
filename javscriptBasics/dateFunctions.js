@@ -25,25 +25,25 @@ function showToTimeString() {
 // Show UTC String
 function showUTCString() {
   let date = getSelectedDate();
-  document.getElementById("dateResult").innerText = "toUTCString(): " + date.toUTCString();
+  document.getElementById("dateResult").innerText = date.toUTCString();
 }
 
 // Show ISO String
 function showISOString() {
   let date = getSelectedDate();
-  document.getElementById("dateResult").innerText = "toISOString(): " + date.toISOString();
+  document.getElementById("dateResult").innerText = date.toISOString();
 }
 
 // Show Local Date String
 function showLocaleDateString() {
   let date = getSelectedDate();
-  document.getElementById("dateResult").innerText = "toLocaleDateString(): " + date.toLocaleDateString();
+  document.getElementById("dateResult").innerText = date.toLocaleDateString();
 }
 
 // Show Local Time String
 function showLocaleTimeString() {
   let date = getSelectedDate();
-  document.getElementById("dateResult").innerText = "toLocaleTimeString(): " + date.toLocaleTimeString();
+  document.getElementById("dateResult").innerText = date.toLocaleTimeString();
 }
 
 // Show toLocaleString()
@@ -98,6 +98,58 @@ function showGetSeconds() {
 function showGetTime() {
   let date = getSelectedDate();
   document.getElementById("dateResult").innerHTML = date.getTime();
+}
+
+/* ---------- Local Get Methods ---------- */
+function showMilliseconds() {
+  let date = getSelectedDate();
+  document.getElementById("dateResult").innerText = date.getMilliseconds();
+}
+
+function showTimezoneOffset() {
+  let date = getSelectedDate();
+  document.getElementById("dateResult").innerText = date.getTimezoneOffset();
+}
+
+/* ---------- UTC Get Methods ---------- */
+function showUTCFullYear() {
+  let date = getSelectedDate();
+  document.getElementById("dateResult").innerText = date.getUTCFullYear();
+}
+
+function showUTCMonth() {
+  let date = getSelectedDate();
+  document.getElementById("dateResult").innerText = date.getUTCMonth();
+}
+
+function showUTCDate() {
+  let date = getSelectedDate();
+  document.getElementById("dateResult").innerText = date.getUTCDate();
+}
+
+function showUTCDay() {
+  let date = getSelectedDate();
+  document.getElementById("dateResult").innerText = date.getUTCDay();
+}
+
+function showUTCHours() {
+  let date = getSelectedDate();
+  document.getElementById("dateResult").innerText = date.getUTCHours();
+}
+
+function showUTCMinutes() {
+  let date = getSelectedDate();
+  document.getElementById("dateResult").innerText = date.getUTCMinutes();
+}
+
+function showUTCSeconds() {
+  let date = getSelectedDate();
+  document.getElementById("dateResult").innerText = date.getUTCSeconds();
+}
+
+function showUTCMilliseconds() {
+  let date = getSelectedDate();
+  document.getElementById("dateResult").innerText = date.getUTCMilliseconds();
 }
 
 // Show Date.now() (static method)

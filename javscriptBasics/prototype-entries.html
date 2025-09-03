@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Prototype & Object.entries Demo</title>
+  <script src="prototype-entries.js" defer></script>
+</head>
+<body>
+  <h2>prototype & Object.entries Practice</h2>
+
+  <!-- Inputs -->
+  <label>Enter your Name:</label>
+  <input type="text" id="nameInput"><br><br>
+
+  <label>Enter your Age:</label>
+  <input type="number" id="ageInput"><br><br>
+
+  <label>Course Name:</label>
+  <input type="text" id="courseInput"><br><br>
+
+  <!-- Actions -->
+  <button id="createBtn" onclick="createStudent()">Create Student</button>
+  <button id="entriesBtn" onclick="showEntries()" disabled>Show Object.entries()</button>
+  <button id="greetBtn" onclick="showGreeting()" disabled>Call prototype method</button>
+  <button id="addPropBtn" onclick="addExtraProperty()" disabled>Add extra property (city)</button>
+
+  <!-- Outputs -->
+  <h4>Result</h4>
+  <pre id="resultBox"></pre>
+</body>
+</html>

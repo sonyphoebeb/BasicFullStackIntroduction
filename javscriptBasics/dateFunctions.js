@@ -22,6 +22,30 @@ function showToTimeString() {
   document.getElementById("dateResult").innerHTML = date.toTimeString();
 }
 
+// Show UTC String
+function showUTCString() {
+  let date = getSelectedDate();
+  document.getElementById("dateResult").innerText = "toUTCString(): " + date.toUTCString();
+}
+
+// Show ISO String
+function showISOString() {
+  let date = getSelectedDate();
+  document.getElementById("dateResult").innerText = "toISOString(): " + date.toISOString();
+}
+
+// Show Local Date String
+function showLocaleDateString() {
+  let date = getSelectedDate();
+  document.getElementById("dateResult").innerText = "toLocaleDateString(): " + date.toLocaleDateString();
+}
+
+// Show Local Time String
+function showLocaleTimeString() {
+  let date = getSelectedDate();
+  document.getElementById("dateResult").innerText = "toLocaleTimeString(): " + date.toLocaleTimeString();
+}
+
 // Show toLocaleString()
 function showToLocaleString() {
   let date = getSelectedDate();

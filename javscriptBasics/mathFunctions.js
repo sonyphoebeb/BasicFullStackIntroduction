@@ -1,3 +1,4 @@
+
 // Get input numbers from text field
 function getNumbers() {
     let input = document.getElementById("numInput").value.trim();
@@ -8,8 +9,6 @@ function getNumbers() {
 function showResult(text) {
     document.getElementById("resultBox").textContent = text;
 }
-
-// ---------------- Separate Functions ----------------
 
 // abs
 function mathAbs() {
@@ -213,15 +212,14 @@ function mathTrunc() {
 
 // constants
 function showConstants() {
-    let constants = `
-  Math.E = ${Math.E}
+    let constants =
+        ` Math.E = ${Math.E}
   Math.LN2 = ${Math.LN2}
   Math.LN10 = ${Math.LN10}
   Math.LOG2E = ${Math.LOG2E}
   Math.LOG10E = ${Math.LOG10E}
   Math.PI = ${Math.PI}
   Math.SQRT1_2 = ${Math.SQRT1_2}
-  Math.SQRT2 = ${Math.SQRT2}
-    `;
+  Math.SQRT2 = ${Math.SQRT2}`;
     showResult(constants);
 }

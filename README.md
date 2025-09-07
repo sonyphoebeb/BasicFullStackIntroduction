@@ -285,7 +285,6 @@ It showcases my projects, skills, and contact details, with a clean and responsi
 
 📂 Project Structure
 
-.
 ├── index.html # Home page
 
 ├── projects.html # Projects page

@@ -79,23 +79,31 @@
 
 5. HTML Attributes:
    Provide additional information about HTML elements
+   
    All HTML elements can have attributes.
+   
       a. "href" attribute specifies the URL of the page the link goes to
                <a href="https://www.sony.com">Visit Sony</a>
+               
       b.	"src" attribute specifies the path to the image to be displayed
                 <img src="img.png" alt="My Image">
+                
       c.	"width" attribute and "height" attribute provide size information for images
                 <img src="img.png" width="200" height="150">
+                
       d.	"alt" attribute provides alternate text for an image
       	       <img src="img.png" alt="Profile Picture">
+              
       e.	"style" attribute adds styles to an element (like color, font, size, etc.)
       	       <p style="color:blue;">This is blue text</p>
+              
       f.	"lang" attribute declares the language of the webpage
       	       <html lang="en">
+              
       g.	"title" attribute Defines extra information about an element (tooltip)
       	        <p title="This is my name">Sony</p>
 
-6. Code practiced in Cursor today
+7. Code practiced in Cursor today
     <!DOCTYPE>
     <HTML>
     <HEAD>

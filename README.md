@@ -284,6 +284,7 @@ It showcases my projects, skills, and contact details, with a clean and responsi
 - Font Awesome(for icons)
 
 📂 Project Structure
+
 .
 ├── index.html # Home page
 ├── projects.html # Projects page

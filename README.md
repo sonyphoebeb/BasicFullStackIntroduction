@@ -79,23 +79,31 @@
 
 5. HTML Attributes:
    Provide additional information about HTML elements
+   
    All HTML elements can have attributes.
+   
       a. "href" attribute specifies the URL of the page the link goes to
                <a href="https://www.sony.com">Visit Sony</a>
+               
       b.	"src" attribute specifies the path to the image to be displayed
                 <img src="img.png" alt="My Image">
+                
       c.	"width" attribute and "height" attribute provide size information for images
                 <img src="img.png" width="200" height="150">
+                
       d.	"alt" attribute provides alternate text for an image
       	       <img src="img.png" alt="Profile Picture">
+              
       e.	"style" attribute adds styles to an element (like color, font, size, etc.)
       	       <p style="color:blue;">This is blue text</p>
+              
       f.	"lang" attribute declares the language of the webpage
       	       <html lang="en">
+              
       g.	"title" attribute Defines extra information about an element (tooltip)
       	        <p title="This is my name">Sony</p>
 
-6. Code practiced in Cursor today
+7. Code practiced in Cursor today
     <!DOCTYPE>
     <HTML>
     <HEAD>
@@ -207,42 +215,54 @@ Here are the topics I covered:
 📅 Date: 20-08-2025
 # Day 5 – HTML & CSS Practice
  1. HTML CSS: CSS stands for Cascading Style Sheets, CSS saves a lot of work. It can control the layout of multiple web pages all at once.
+ 2. 
              CSS can be added to HTML documents in 3 ways:
+    
                    ->Inline - by using the style attribute inside HTML elements
+    
                    ->Internal - by using a <style> element in the <head> section
+    
                    ->External - by using a <link> element to link to an external CSS file
 
-2. HTML Links: HTML links are hyperlinks, you can click on a link and jump to another document.
+4. HTML Links: HTML links are hyperlinks, you can click on a link and jump to another document.
+5. 
                a. The most important attribute of the <a> element is the href attribute, which indicates the link's destination.
                        <a href="url">link text</a>
+                       
                b. The "target" attribute specifies where to open the linked document.
                   The "target" attribute can have one of the following values:
                       _self - Default. Opens the document in the same window/tab as it was clicked
                       _blank - Opens the document in a new window or tab
                       _parent - Opens the document in the parent frame
                       _top - Opens the document in the full body of the window
+   
                c. Absolute URLs: An absolute URL points to the complete location of a resource on the internet.
                    Always includes protocol (http:// or https://), domain name, and full path.
+   
                d. Relative URLs: A relative URL points to a resource relative to the location of the current page.
                    Does not include domain name.
                                                   
-3. HTML Images: The HTML <img> tag is used to embed an image in a web page
-                * The <img> tag is empty, it contains attributes only, and does not have a closing tag. 
+7. HTML Images: The HTML <img> tag is used to embed an image in a web page
+   
+                * The <img> tag is empty, it contains attributes only, and does not have a closing tag.
+   
                 * The <img> tag has two required attributes:
                          "src" - Specifies the path to the image
                          "alt" - Specifies an alternate text for the image
+   
                 * Use the CSS float property to let the image float to the right or to the left of a text:
 
 
-4. HTML Favicon: A favicon is a small image displayed next to the page title in the browser tab.
+9. HTML Favicon: A favicon is a small image displayed next to the page title in the browser tab.
 
-5. HTML Tables: HTML tables allow web developers to arrange data into rows and columns.
+10. HTML Tables: HTML tables allow web developers to arrange data into rows and columns.
+    
    <table>	Defines a table
    <th>	Defines a header cell in a table
    <tr>	Defines a row in a table
    <td>	Defines a cell in a table
 
-6. Code updated with Day 5 practice.   
+11. Code updated with Day 5 practice.   
 
 📅 Date: 21-08-2025
 # Day 6 – HTML & CSS Practice
@@ -264,12 +284,17 @@ It showcases my projects, skills, and contact details, with a clean and responsi
 - Font Awesome(for icons)
 
 📂 Project Structure
-.
+
 ├── index.html # Home page
+
 ├── projects.html # Projects page
+
 ├── skills.html # Skills page
+
 ├── contact.html # Contact page
+
 ├── style.css # Stylesheet
+
 └── README.md # Documentation
 
  🌍 Deployment

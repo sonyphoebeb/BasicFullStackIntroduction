@@ -88,5 +88,40 @@ function arrayFlat(){
 function arrayFlatMap(){
     let myArr = [1,2,3,4,5];
     document.getElementById("myArray").innerHTML = myArr;
-    document.getElementById("arrayFlatMap").innerHTML = myArr.flatMap(a => [a,a*5]);
+    document.getElementById("arrayFlatMap").innerHTML = myArr.flatMap(a => [a, a * 5]);
+}
+
+//fun to use splice() method to add the elements
+function arraySplice(){
+    let result = collageNames.splice(0, 2, "SSIT", "MTIT");
+    document.getElementById("arraySplice").innerHTML = result;  //this will show only the spliced elements
+    document.getElementById("arraySpliceResult").innerHTML = collageNames;   //this will show entire array after splicing
+}
+
+//fun to use splice() method to remove the elements
+function arraySpliceRemove(){
+    document.getElementById("currentArray").innerHTML = "Current array: "+collageNames; //show current array
+    document.getElementById("arraySpliceRemove").innerHTML = "Removed item: " +collageNames.splice(3, 1);  //this will show only the spliced elements
+    document.getElementById("arraySpliceRemovedResult").innerHTML = "Array after removing: " +collageNames;   //this will show entire array after splicing
+}
+
+//fun to use toSpliced() method
+function arrayToSpliced(){
+    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"];  
+    document.getElementById("currentArray2").innerHTML = "Current array: " +months;  //show current array
+    document.getElementById("arrayToSpliced").innerHTML = months.toSpliced(0, 2);   
+}
+
+//fun to use slice() method to remove the elements
+function arraySlice(){
+    let myArray = [1,2,3,4,5,6];
+    document.getElementById("currentArray3").innerHTML = "Current array: " +myArray;  //show current array
+    document.getElementById("arraySliceResult").innerHTML = myArray.slice(3);   
+}
+
+//fun to use slice() method can also take 2 arguments
+function arraySlice2(){
+    let myArray = [0,1,2,3,4,5,6];
+    document.getElementById("currentArray4").innerHTML = "Current array: " +myArray;  //show current array
+    document.getElementById("arraySliceResult2").innerHTML = myArray.slice(2,5);   
 }

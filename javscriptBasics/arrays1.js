@@ -59,3 +59,34 @@ function arrayUnshift(){
     document.getElementById("arrayUnshift").innerHTML = result;
     document.getElementById("arrayUnshiftResult").innerHTML = collageNames;
 }
+
+//this fun will combine 2 or more arrays
+function arrayConcat(){
+    let firmNames = ["TechM", "MedSquire", "Fulltanker", "Infosys", "Microsoft"];
+    let newArray = firmNames.concat(collageNames);
+    document.getElementById("arrayConcat").innerHTML = newArray;
+}
+
+//we can also use concat() to merge the array with value
+function arrayConcatWithValue(){
+    let newArray = collageNames.concat("CBIT");
+    document.getElementById("arrayConcatWithValue").innerHTML = newArray;
+}
+
+//fun to use copywithin() method
+function arraycopywithin(){
+    document.getElementById("arraycopywithin").innerHTML = collageNames.copyWithin(3,0);
+}
+
+//fun to use flat() method
+function arrayFlat(){
+    let myBoolValues = [['M','F'], ["True", "False"], [0,1]];
+    document.getElementById("arrayFlat").innerHTML = myBoolValues.flat(); //this method will give the result in new array 
+}
+
+//fun to use flatMap() method
+function arrayFlatMap(){
+    let myArr = [1,2,3,4,5];
+    document.getElementById("myArray").innerHTML = myArr;
+    document.getElementById("arrayFlatMap").innerHTML = myArr.flatMap(a => [a,a*5]);
+}

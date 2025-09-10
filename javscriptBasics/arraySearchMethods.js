@@ -19,7 +19,7 @@ function arrayIncludes() {
 }
 
 //fun returns the starting num based on the fun condition
-function arrayfind() {
+function arrayFind() {
 
     let numbers = [10, 50, 118, 69, 36, 45];
     document.getElementById("currentArray").innerHTML = "Current Array: " + numbers;
@@ -29,4 +29,43 @@ function arrayfind() {
     }
     
     document.getElementById("findResult").innerHTML = numbers.find(myFunction);
+}
+
+//fun returns the index of starting num based on the fun condition
+function arrayFindIndex() {
+
+    let numbers = [10, 50, 118, 69, 36, 45];
+    document.getElementById("currentArray1").innerHTML = "Current Array: " + numbers;
+
+    function myFunction(value, index, array){
+           return value > 50;
+    }
+    
+    document.getElementById("findIndexResult").innerHTML = numbers.findIndex(myFunction);
+}
+
+//fun returns the last num based on the fun condition
+function arrayFindLast() {
+
+    let numbers = [10, 50, 118, 69, 36, 45, 200];
+    document.getElementById("currentArray2").innerHTML = "Current Array: " + numbers;
+
+    function myFunction(value, index, array){
+           return value > 50;
+    }
+    
+    document.getElementById("findLastResult").innerHTML = numbers.findLast(myFunction);
+}
+
+//fun returns the index of last num based on the fun condition
+function arrayFindLastIndex() {
+
+    let numbers = [10, 50, 118, 69, 36, 45, 200];
+    document.getElementById("currentArray3").innerHTML = "Current Array: " + numbers;
+
+    function myFunction(value, index, array){
+           return value > 50;
+    }
+    
+    document.getElementById("findLastIndexResult").innerHTML = numbers.findLastIndex(myFunction);
 }

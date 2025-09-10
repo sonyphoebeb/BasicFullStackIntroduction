@@ -80,7 +80,7 @@ function arraycopywithin(){
 
 //fun to use flat() method
 function arrayFlat(){
-    let myBoolValues = [['M','F'], ["True", "False"], [0,1]];
+    let myBoolValues = [['M','F'], ["True", "False"], [0,1]];   //array of arrays
     document.getElementById("arrayFlat").innerHTML = myBoolValues.flat(); //this method will give the result in new array 
 }
 
@@ -116,12 +116,13 @@ function arrayToSpliced(){
 function arraySlice(){
     let myArray = [1,2,3,4,5,6];
     document.getElementById("currentArray3").innerHTML = "Current array: " +myArray;  //show current array
-    document.getElementById("arraySliceResult").innerHTML = myArray.slice(3);   
+    document.getElementById("arraySliceResult").innerHTML = myArray.slice(3);   //it will remove 1st 3 elements
 }
 
 //fun to use slice() method can also take 2 arguments
 function arraySlice2(){
-    let myArray = [0,1,2,3,4,5,6];
+    let myArray = [0,1,2,3,4,5,6];  
     document.getElementById("currentArray4").innerHTML = "Current array: " +myArray;  //show current array
-    document.getElementById("arraySliceResult2").innerHTML = myArray.slice(2,5);   
+    document.getElementById("arraySliceResult2").innerHTML = myArray.slice(2,5);   //it will show the elements from to 5(exclude last argument)
 }
+

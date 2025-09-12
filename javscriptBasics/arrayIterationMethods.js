@@ -109,3 +109,31 @@ function arrayFrom() {
   
   document.getElementById("fromResult").innerHTML = "from() result: " + Array.from(text);
 }
+
+let mobileCompanies = ["Apple", "Samsung", "Oneplus", "Oppo"];
+
+window.onload = function () {
+  document.getElementById("myString2").innerHTML = mobileCompanies;
+};
+
+// array keys -> gives array indexes
+function arrayKeys() {
+
+let keys = mobileCompanies.keys();
+let keysOutput = "";
+for (let key of keys) {
+  keysOutput += key + "<br>";
+}
+document.getElementById("keysResult").innerHTML = "<b>Keys:</b><br>" + keysOutput;
+}
+
+// array keys -> gives array indexes
+function arrayEntries() {
+
+  let entries = mobileCompanies.entries();
+  let entriesOutput = "";
+  for (let entry of entries) {
+    entriesOutput += entry + "<br>";
+  }
+  document.getElementById("entriesResult").innerHTML = "<b>Entries:</b><br>" + entriesOutput;
+  }

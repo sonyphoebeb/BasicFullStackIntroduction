@@ -43,3 +43,69 @@ function arrayFilter() {
     return value < 10;
   }
 }
+
+// array reduce
+function arrayReduce() {
+
+  let result = nums.reduce(myFunction)
+  document.getElementById("reduceResult").innerHTML = result;
+
+  function myFunction(total, value) {
+    return total + value;
+  }
+}
+
+// array reduce
+function arrayReduce2() {
+
+  let result = nums.reduce(myFunction, 150)
+  document.getElementById("reduceResult2").innerHTML = result;
+
+  function myFunction(total, value) {
+    return total + value;
+  }
+}
+
+// array reduce-right
+function arrayReduceRight() {
+
+  let myChar = ['a', 'b', 'c'];
+  document.getElementById("currentArray").innerHTML = "Current Array: " + myChar;
+
+  document.getElementById("reduceRightResult").innerHTML = "reduceRight result: " + myChar.reduceRight(myFunction);
+
+  function myFunction(total, value) {
+    return total + value;
+  }
+}
+
+// array every
+function arrayEvery() {
+
+  let result = nums.every(myFunction)
+  document.getElementById("everyResult").innerHTML = result;
+
+  function myFunction(value) {
+    return value > 5;
+  }
+}
+
+// array some
+function arraySome() {
+
+  let result = nums.some(myFunction)
+  document.getElementById("someResult").innerHTML = result;
+
+  function myFunction(value) {
+    return value > 5;
+  }
+}
+
+// array from
+function arrayFrom() {
+
+  let text = "SONY IS THE BEST";
+  document.getElementById("myString").innerHTML = "My String: " + text;
+  
+  document.getElementById("fromResult").innerHTML = "from() result: " + Array.from(text);
+}

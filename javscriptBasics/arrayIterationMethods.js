@@ -110,8 +110,9 @@ function arrayFrom() {
   document.getElementById("fromResult").innerHTML = "from() result: " + Array.from(text);
 }
 
-let mobileCompanies = ["Apple", "Samsung", "Oneplus", "Oppo"];
 
+// sample array
+let mobileCompanies = ["Apple", "Samsung", "Oneplus", "Oppo"];
 window.onload = function () {
   document.getElementById("myString2").innerHTML = mobileCompanies;
 };

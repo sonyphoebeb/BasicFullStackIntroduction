@@ -1,35 +1,36 @@
-
-class Beverage  {
-
-    constructor (name, ingredients){
-         this.name = name;
-         this.ingredients = ingredients;
+class Beverage {
+    constructor(name, ingredients = []) {
+        this.name = name;
+        this.ingredients = ingredients;
     }
 
+    addIngredient(ingredient) {
+        this.ingredients.push(ingredient);
+    }
+
+    removeIngredient(ingredient) {
+        this.ingredients = this.ingredients.filter(item => item !== ingredient);
+    }
+
+    listIngredients() {
+        return this.ingredients.join(", ");
+    }
 }
 
-function getIngredients() {
+// Global beverage object
+let coffee = new Beverage("Coffee", ["Milk", "Coffee powder", "Sugar"]);
 
-    let coffee =  new Beverage ("Coffee", ["Milk", "Coffee powder", "Sugar"]);
-
-    document.getElementById("coffeeResult").innerHTML =  
-           `The Beverage: ${coffee.name} contains ingredients like ${coffee.ingredients.join(", ")}`
+function showIngredients() {
+    document.getElementById("beverageResult").innerHTML =
+        `<b>${coffee.name}</b> Ingredients: ${coffee.listIngredients()}`;
 }
 
-function addIngredients() {
-   
-    let coffee = new Beverage("Coffee", ["Milk", "Coffee powder", "Sugar"]);
-   
-    let newIngredient = "Cinnamon";
-
-    coffee.ingredients.push(newIngredient);
-
-    document.getElementById("addedCinnamon").innerHTML =
-        `${newIngredient} is added to ${coffee.name}.<br>
-         Updated Ingredients: ${coffee.ingredients.join(", ")}`;
+function addCinnamon() {
+    coffee.addIngredient("Cinnamon");
+    showIngredients();
 }
 
-
-
-
-
+function removeSugar() {
+    coffee.removeIngredient("Sugar");
+    showIngredients();
+}

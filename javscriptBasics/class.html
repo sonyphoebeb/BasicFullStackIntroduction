@@ -1,16 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Beverage Manager</title>
-    <script src="class.js" defer></script>
+  <meta charset="UTF-8">
+  <title>Beverage Manager</title>
+  <script src="class.js" defer></script>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .input-box { margin-bottom: 15px; }
+    .beverage-card {
+      border: 1px solid #ccc; 
+      border-radius: 8px;
+      padding: 10px;
+      margin: 10px 0;
+      background: #f9f9f9;
+      width: 250px;
+    }
+    h3 { margin: 0 0 10px 0; }
+  </style>
 </head>
 <body>
-    <h1>Beverage Manager ☕</h1>
+  <h1>🍹 Beverage Manager</h1>
 
-    <button onclick="showIngredients()">Show Coffee Ingredients</button>
-    <button onclick="addCinnamon()">Add Cinnamon</button>
-    <button onclick="removeSugar()">Remove Sugar</button>
+  <div class="input-box">
+    <label>Beverage Name:</label><br>
+    <input type="text" id="beverageName" placeholder="e.g. Coffee"><br><br>
 
-    <p id="beverageResult"></p>
+    <label>Ingredients (comma separated):</label><br>
+    <input type="text" id="beverageIngredients" placeholder="Milk, Sugar, Coffee Powder"><br><br>
+
+    <button onclick="addBeverage()">Add Beverage</button>
+  </div>
+
+  <h2>Beverage List</h2>
+  <div id="beverageList"></div>
 </body>
 </html>

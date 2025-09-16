@@ -1,3 +1,4 @@
+// 🔹 Utility class with static methods (all have params)
 class MathUtil {
     static PI = 3.14159;
 
@@ -8,36 +9,45 @@ class MathUtil {
     static multiply(a, b) {
         return a * b;
     }
-}
 
-// Functions for buttons
-function useAdd() {
-    let a = parseFloat(document.getElementById("num1").value);
-    let b = parseFloat(document.getElementById("num2").value);
-
-    if (isNaN(a) || isNaN(b)) {
-        document.getElementById("addResult").innerHTML = "⚠ Please enter numbers!";
-        return;
+    static subtract(a, b) {
+        return a - b;
     }
 
-    document.getElementById("addResult").innerHTML =
-        "Result: " + MathUtil.add(a, b);
+    static divide(a, b) {
+        if (b === 0) return "⚠ Cannot divide by zero!";
+        return a / b;
+    }
+}
+
+// 🔹 Helper: get input values
+function getInputs() {
+    let a = parseFloat(document.getElementById("num1").value);
+    let b = parseFloat(document.getElementById("num2").value);
+    return { a, b };
+}
+
+// 🔹 Functions for UI buttons
+function useAdd() {
+    let { a, b } = getInputs();
+    document.getElementById("addResult").innerHTML = "Result: " + MathUtil.add(a, b);
 }
 
 function useMultiply() {
-    let a = parseFloat(document.getElementById("num1").value);
-    let b = parseFloat(document.getElementById("num2").value);
+    let { a, b } = getInputs();
+    document.getElementById("multiplyResult").innerHTML = "Result: " + MathUtil.multiply(a, b);
+}
 
-    if (isNaN(a) || isNaN(b)) {
-        document.getElementById("multiplyResult").innerHTML = "⚠ Please enter numbers!";
-        return;
-    }
+function useSubtract() {
+    let { a, b } = getInputs();
+    document.getElementById("subtractResult").innerHTML = "Result: " + MathUtil.subtract(a, b);
+}
 
-    document.getElementById("multiplyResult").innerHTML =
-        "Result: " + MathUtil.multiply(a, b);
+function useDivide() {
+    let { a, b } = getInputs();
+    document.getElementById("divideResult").innerHTML = "Result: " + MathUtil.divide(a, b);
 }
 
 function showPI() {
-    document.getElementById("piResult").innerHTML =
-        "Value of PI: " + MathUtil.PI;
+    document.getElementById("piResult").innerHTML = "Value of PI: " + MathUtil.PI;
 }

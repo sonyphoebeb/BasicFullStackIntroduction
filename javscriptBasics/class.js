@@ -33,7 +33,8 @@ class Beverage {
   
   function showBeverages() {
     let output = "";
-    beverages.forEach(b => {
+    beverages.forEach(b => 
+    {
       output += `<h3>${b.name}</h3><ul>`;
       b.ingredients.forEach(ing => {
         output += `<li>${ing}</li>`;

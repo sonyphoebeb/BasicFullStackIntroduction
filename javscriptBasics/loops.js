@@ -21,17 +21,17 @@ function forLoop() {
   // do...while loop
   function doWhileLoop() {
     let result = "";
-    let i = 6;
+    let i = 10;
     do {
       result += "Value: " + i + "<br>";
       i++;
-    } while (i <= 5);
+    } while (i <= 15);
     document.getElementById("doWhileLoopResult").innerHTML = result;
   }
   
   // for...in loop
   function forInLoop() {
-    let person = { name: "Sony", age: 22, city: "Hyderabad" };
+    let person = { name: "Sony", age: 23, city: "Hyderabad" };
     let result = "";
     for (let key in person) {
       result += key + ": " + person[key] + "<br>";
@@ -41,20 +41,20 @@ function forLoop() {
   
   // for...of loop
   function forOfLoop() {
-    let fruits = ["Apple", "Mango", "Orange"];
+    let courses = ["HTML", "CSS", "JavaScript"];
     let result = "";
-    for (let fruit of fruits) {
-      result += fruit + "<br>";
+    for (let course of courses) {
+      result += course + "<br>";
     }
     document.getElementById("forOfLoopResult").innerHTML = result;
   }
   
   // forEach loop
   function forEachLoop() {
-    let nums = [10, 20, 30];
+    let games = ["CandyCrush", "Pubg", "BattleGround"];
     let result = "";
-    nums.forEach(num => {
-      result += "Number: " + num + "<br>";
+    games.forEach(game => {
+      result += "Game: " + game + "<br>";
     });
     document.getElementById("forEachLoopResult").innerHTML = result;
   }

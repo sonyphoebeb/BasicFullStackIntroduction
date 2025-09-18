@@ -1,7 +1,7 @@
 /* General page style */
 body {
     font-family: Arial, sans-serif;
-    background: #f3f4f6;
+    background: #dedee1;
     color: #333;
     margin: 0;
     padding: 20px;
@@ -43,17 +43,49 @@ button:hover {
     background: #005fa3;
 }
 
-/* Paragraph & list results */
+/* Default style for results */
 p,
 ul {
-    background: #f9f9f9;
     padding: 10px;
-    border-left: 4px solid #0077cc;
     margin: 10px 0;
     border-radius: 6px;
     font-size: 15px;
 }
 
-ul {
+/* ✅ Distinct loop results */
+#nestedLoopsResult {
+    background: #e6f7ff;
+    /* Light blue */
+    border-left: 4px solid #0077cc;
+}
+
+#breakContinueResult {
+    background: #fff4e6;
+    /* Light orange */
+    border-left: 4px solid #ff9900;
+}
+
+#arrayConditionResult {
+    background: #f0fff0;
+    /* Light green */
+    border-left: 4px solid #28a745;
+}
+
+#objectLoopResult {
+    background: #f9f0ff;
+    /* Light purple */
+    border-left: 4px solid #8e44ad;
+}
+
+#domLoopResult {
+    background: #fdfdfd;
+    /* Neutral */
+    border-left: 4px solid #333;
     list-style: disc inside;
+}
+
+#compareLoopsResult {
+    background: #ffe6f0;
+    /* Light pink */
+    border-left: 4px solid #e83e8c;
 }

@@ -1,0 +1,59 @@
+/* General page style */
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Centered container */
+.container {
+    max-width: 700px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #0077cc;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background: #0077cc;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #005fa3;
+}
+
+/* Paragraph & list results */
+p,
+ul {
+    background: #f9f9f9;
+    padding: 10px;
+    border-left: 4px solid #0077cc;
+    margin: 10px 0;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+ul {
+    list-style: disc inside;
+}

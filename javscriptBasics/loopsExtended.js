@@ -12,9 +12,9 @@ function nestedLoops() {
 // 2. Break & Continue
 function breakContinue() {
   let result = "";
-  for (let i = 1; i <= 5; i++) {
+  for (let i = 1; i <= 7; i++) {
     if (i === 3) continue; // skips 3
-    if (i === 5) break;   // stops at 5
+    if (i === 6) break;   // stops at 5
     result += "Iteration " + i + "<br>";
   }
   document.getElementById("breakContinueResult").innerHTML = result;
@@ -45,13 +45,13 @@ function objectLoop() {
 
 // 5. Loop + DOM
 function domLoop() {
-  const fruits = ["Apple", "Banana", "Mango", "Orange"];
+  const movies  = ["Seeta Ramam", "Jathi Ratnalu", "Venom", "The Drak Knight"];
   const list = document.getElementById("domLoopResult");
   list.innerHTML = ""; // clear before appending
 
-  fruits.forEach(fruit => {
+  movies.forEach(movie => {
     let li = document.createElement("li");
-    li.textContent = fruit;
+    li.textContent = movie;
     list.appendChild(li);
   });
 }
@@ -69,9 +69,11 @@ function compareLoops() {
   }
 
   // ForEach
-  nums.forEach(n => {
-    forEachLoop += n + " ";
-  });
+  nums.forEach(n => 
+    {
+      forEachLoop += n + " ";
+    }
+  );
 
   // Map
   mapLoop = nums.map(n => n * 2).join(" ");

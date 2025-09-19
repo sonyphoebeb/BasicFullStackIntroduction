@@ -1,50 +1,41 @@
-// Helpers
+// Collect sample text
 function getText() {
   return document.getElementById("sampleInput").value;
 }
 
-function getPattern(flags = "g") {
-  let pattern = document.getElementById("patternInput").value;
+// Collect flags dynamically from checkboxes
+function getFlags() {
+  let flags = "";
+  if (document.getElementById("flagG").checked) flags += "g";
+  if (document.getElementById("flagI").checked) flags += "i";
+  if (document.getElementById("flagM").checked) flags += "m";
+  if (document.getElementById("flagS").checked) flags += "s";
+  if (document.getElementById("flagU").checked) flags += "u";
+  if (document.getElementById("flagY").checked) flags += "y";
+  return flags || "g"; // default global
+}
+
+// Helper to build RegExp
+function buildRegex(inputId) {
+  let pattern = document.getElementById(inputId).value;
   try {
-    return new RegExp(pattern, flags);
-  } catch (e) {
-    alert("Invalid regex pattern!");
+    return new RegExp(pattern, getFlags());
+  } catch {
+    alert("Invalid regex: " + pattern);
     return null;
   }
 }
 
-// Flags
-function flagGlobal() {
-  let regex = getPattern("g");
-  if (!regex) return;
-  let result = getText().match(regex);
-  document.getElementById("globalResult").innerHTML = result || "No match";
-}
-
-function flagIgnoreCase() {
-  let regex = getPattern("i");
-  if (!regex) return;
-  let result = getText().match(regex);
-  document.getElementById("ignoreCaseResult").innerHTML = result || "No match";
-}
-
-function flagMultiline() {
-  let regex = getPattern("m");
-  if (!regex) return;
-  let result = getText().match(regex);
-  document.getElementById("multilineResult").innerHTML = result || "No match";
-}
-
 // Methods
 function useMatch() {
-  let regex = getPattern("g");
+  let regex = buildRegex("matchPattern");
   if (!regex) return;
   let result = getText().match(regex);
   document.getElementById("matchResult").innerHTML = result || "No match";
 }
 
 function useMatchAll() {
-  let regex = getPattern("gi");
+  let regex = buildRegex("matchAllPattern");
   if (!regex) return;
   let result = [...getText().matchAll(regex)];
   document.getElementById("matchAllResult").innerHTML =
@@ -52,15 +43,15 @@ function useMatchAll() {
 }
 
 function useReplace() {
-  let regex = getPattern("gi");
+  let regex = buildRegex("replacePattern");
   if (!regex) return;
-  let replacement = document.getElementById("replaceInput").value || "***";
+  let replacement = document.getElementById("replaceText").value || "***";
   let result = getText().replace(regex, replacement);
   document.getElementById("replaceResult").innerHTML = result;
 }
 
 function useSearch() {
-  let regex = getPattern();
+  let regex = buildRegex("searchPattern");
   if (!regex) return;
   let result = getText().search(regex);
   document.getElementById("searchResult").innerHTML =
@@ -68,23 +59,23 @@ function useSearch() {
 }
 
 function useSplit() {
-  let regex = getPattern();
+  let regex = buildRegex("splitPattern");
   if (!regex) return;
   let result = getText().split(regex);
   document.getElementById("splitResult").innerHTML = result.join(" | ");
 }
 
 function useTest() {
-  let regex = getPattern();
+  let regex = buildRegex("testPattern");
   if (!regex) return;
   let result = regex.test(getText());
   document.getElementById("testResult").innerHTML = result;
 }
 
 function useExec() {
-  let regex = getPattern();
+  let regex = buildRegex("execPattern");
   if (!regex) return;
   let result = regex.exec(getText());
   document.getElementById("execResult").innerHTML =
-    result ? result[0] : "No match";
+    result ? JSON.stringify(result) : "No match";
 }

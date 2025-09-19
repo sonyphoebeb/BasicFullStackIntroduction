@@ -10,51 +10,70 @@
 <body>
   <h1>⚡ JavaScript RegExp Practice</h1>
 
-  <!-- Input for sample text -->
-  <label for="sampleInput">Enter Sample Text:</label><br>
-  <textarea id="sampleInput" rows="3" cols="40">Hello hello HELLO world 123</textarea>
+  <!-- Sample text -->
+  <label for="sampleInput">📝 Enter Sample Text:</label><br>
+  <textarea id="sampleInput" rows="3" cols="50">Hello hello HELLO world 123</textarea>
   <br><br>
 
-  <!-- Input for regex pattern -->
-  <label for="patternInput">Enter Pattern (regex):</label><br>
-  <input type="text" id="patternInput" placeholder="e.g. hello or \\d+" value="hello">
+  <!-- Flags -->
+  <h2>🎌 Select Flags</h2>
+  <label><input type="checkbox" id="flagG"> g (global)</label>
+  <label><input type="checkbox" id="flagI"> i (ignoreCase)</label>
+  <label><input type="checkbox" id="flagM"> m (multiline)</label>
+  <label><input type="checkbox" id="flagS"> s (dotAll)</label>
+  <label><input type="checkbox" id="flagU"> u (unicode)</label>
+  <label><input type="checkbox" id="flagY"> y (sticky)</label>
   <br><br>
 
-  <!-- Input for replacement -->
-  <label for="replaceInput">Replacement Text (for replace):</label><br>
-  <input type="text" id="replaceInput" placeholder="e.g. Hi">
-  <br><br>
-
-  <h2>🔍 Flags</h2>
-  <button onclick="flagGlobal()">/g - Global</button>
-  <p id="globalResult"></p>
-
-  <button onclick="flagIgnoreCase()">/i - Ignore Case</button>
-  <p id="ignoreCaseResult"></p>
-
-  <button onclick="flagMultiline()">/m - Multiline</button>
-  <p id="multilineResult"></p>
-
-  <h2>⚙️ Methods</h2>
-  <button onclick="useMatch()">match()</button>
+  <!-- Match -->
+  <h2>🔍 match()</h2>
+  <label for="matchPattern">Pattern to Match:</label>
+  <input type="text" id="matchPattern" placeholder="e.g. hello"><br>
+  <button onclick="useMatch()">Run match()</button>
   <p id="matchResult"></p>
 
-  <button onclick="useMatchAll()">matchAll()</button>
+  <!-- MatchAll -->
+  <h2>🔍 matchAll()</h2>
+  <label for="matchAllPattern">Pattern for MatchAll:</label>
+  <input type="text" id="matchAllPattern" placeholder="e.g. \\d+"><br>
+  <button onclick="useMatchAll()">Run matchAll()</button>
   <p id="matchAllResult"></p>
 
-  <button onclick="useReplace()">replace()</button>
+  <!-- Replace -->
+  <h2>♻️ replace()</h2>
+  <label for="replacePattern">Pattern to Replace with:</label>
+  <input type="text" id="replacePattern" placeholder="e.g. world"><br>
+  <label for="replaceText">Replace With:</label>
+  <input type="text" id="replaceText" placeholder="e.g. Earth"><br>
+  <button onclick="useReplace()">Run replace()</button>
   <p id="replaceResult"></p>
 
-  <button onclick="useSearch()">search()</button>
+  <!-- Search -->
+  <h2>🔎 search()</h2>
+  <label for="searchPattern">Pattern to Search for:</label>
+  <input type="text" id="searchPattern" placeholder="e.g. HELLO"><br>
+  <button onclick="useSearch()">Run search()</button>
   <p id="searchResult"></p>
 
-  <button onclick="useSplit()">split()</button>
+  <!-- Split -->
+  <h2>✂️ split()</h2>
+  <label for="splitPattern">Pattern to Split by:</label>
+  <input type="text" id="splitPattern" placeholder="e.g. space ' '"><br>
+  <button onclick="useSplit()">Run split()</button>
   <p id="splitResult"></p>
 
-  <button onclick="useTest()">test()</button>
+  <!-- Test -->
+  <h2>✅ test()</h2>
+  <label for="testPattern">Pattern to Test:</label>
+  <input type="text" id="testPattern" placeholder="e.g. \\d"><br>
+  <button onclick="useTest()">Run test()</button>
   <p id="testResult"></p>
 
-  <button onclick="useExec()">exec()</button>
+  <!-- Exec -->
+  <h2>⚙️ exec()</h2>
+  <label for="execPattern">Pattern for Exec:</label>
+  <input type="text" id="execPattern" placeholder="e.g. hello"><br>
+  <button onclick="useExec()">Run exec()</button>
   <p id="execResult"></p>
 </body>
 </html>

@@ -1,69 +1,89 @@
-// Helper: get user input
+// Helpers
 function getText() {
   return document.getElementById("sampleInput").value;
 }
 
-// /g flag
+function getPattern(flags = "g") {
+  let pattern = document.getElementById("patternInput").value;
+  try {
+    return new RegExp(pattern, flags);
+  } catch (e) {
+    alert("Invalid regex pattern!");
+    return null;
+  }
+}
+
+// Flags
 function flagGlobal() {
-  let result = getText().match(/hello/g);
+  let regex = getPattern("g");
+  if (!regex) return;
+  let result = getText().match(regex);
   document.getElementById("globalResult").innerHTML = result || "No match";
 }
 
-// /i flag
 function flagIgnoreCase() {
-  let result = getText().match(/hello/i);
+  let regex = getPattern("i");
+  if (!regex) return;
+  let result = getText().match(regex);
   document.getElementById("ignoreCaseResult").innerHTML = result || "No match";
 }
 
-// /m flag
 function flagMultiline() {
-  let regex = /^Hello/m;
+  let regex = getPattern("m");
+  if (!regex) return;
   let result = getText().match(regex);
   document.getElementById("multilineResult").innerHTML = result || "No match";
 }
 
-// match()
+// Methods
 function useMatch() {
-  let result = getText().match(/Hello/g);
+  let regex = getPattern("g");
+  if (!regex) return;
+  let result = getText().match(regex);
   document.getElementById("matchResult").innerHTML = result || "No match";
 }
 
-// matchAll()
 function useMatchAll() {
-  let result = [...getText().matchAll(/hello/gi)];
+  let regex = getPattern("gi");
+  if (!regex) return;
+  let result = [...getText().matchAll(regex)];
   document.getElementById("matchAllResult").innerHTML =
     result.length ? result.map(r => r[0]).join(", ") : "No match";
 }
 
-// replace()
 function useReplace() {
-  let result = getText().replace(/hello/gi, "Hi");
+  let regex = getPattern("gi");
+  if (!regex) return;
+  let replacement = document.getElementById("replaceInput").value || "***";
+  let result = getText().replace(regex, replacement);
   document.getElementById("replaceResult").innerHTML = result;
 }
 
-// search()
 function useSearch() {
-  let result = getText().search(/world/);
+  let regex = getPattern();
+  if (!regex) return;
+  let result = getText().search(regex);
   document.getElementById("searchResult").innerHTML =
     result >= 0 ? `Found at index ${result}` : "Not found";
 }
 
-// split()
 function useSplit() {
-  let result = getText().split(/\s+/);
+  let regex = getPattern();
+  if (!regex) return;
+  let result = getText().split(regex);
   document.getElementById("splitResult").innerHTML = result.join(" | ");
 }
 
-// test()
 function useTest() {
-  let regex = /\d+/;
+  let regex = getPattern();
+  if (!regex) return;
   let result = regex.test(getText());
   document.getElementById("testResult").innerHTML = result;
 }
 
-// exec()
 function useExec() {
-  let regex = /\d+/;
+  let regex = getPattern();
+  if (!regex) return;
   let result = regex.exec(getText());
   document.getElementById("execResult").innerHTML =
     result ? result[0] : "No match";

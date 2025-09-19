@@ -10,10 +10,22 @@
 <body>
   <h1>⚡ JavaScript RegExp Practice</h1>
 
+  <!-- Input for sample text -->
   <label for="sampleInput">Enter Sample Text:</label><br>
   <textarea id="sampleInput" rows="3" cols="40">Hello hello HELLO world 123</textarea>
-  <p><b>Text will be used for regex tests</b></p>
+  <br><br>
 
+  <!-- Input for regex pattern -->
+  <label for="patternInput">Enter Pattern (regex):</label><br>
+  <input type="text" id="patternInput" placeholder="e.g. hello or \\d+" value="hello">
+  <br><br>
+
+  <!-- Input for replacement -->
+  <label for="replaceInput">Replacement Text (for replace):</label><br>
+  <input type="text" id="replaceInput" placeholder="e.g. Hi">
+  <br><br>
+
+  <h2>🔍 Flags</h2>
   <button onclick="flagGlobal()">/g - Global</button>
   <p id="globalResult"></p>
 
@@ -23,6 +35,7 @@
   <button onclick="flagMultiline()">/m - Multiline</button>
   <p id="multilineResult"></p>
 
+  <h2>⚙️ Methods</h2>
   <button onclick="useMatch()">match()</button>
   <p id="matchResult"></p>
 
@@ -45,4 +58,3 @@
   <p id="execResult"></p>
 </body>
 </html>
-s

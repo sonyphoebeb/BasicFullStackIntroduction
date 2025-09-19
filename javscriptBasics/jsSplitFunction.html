@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>JavaScript Split Function</title>
-  <script src="jsSplitFunction.js" defer></script>
-</head>
-<body>
-  <h2>JavaScript Split Function</h2>
+    <head>
+        <title>JavaScript Split Function</title>
+        <script src="jsSplitFunction.js"></script>
+    </head>
+    <body>
+        <h1>JavaScript Split Function</h1>
+        <p>The split function is used to split a string into an array of substrings.</p>
 
-  <!-- Patient dropdown -->
-  <select id="patientDropdown" onchange="showPatientData()">
-  </select>
-  <br><br>
+        <label>Enter a string:</label>
+        <input type="text" id="inputString">
 
-  <!-- Index dropdown -->
-  <select id="indexDropdown"></select>
-  <button id="getValueBtn" onclick="showIndexValue()" disabled>Get Value</button>
-  <p id="indexResult"></p>
+        <label>Split By</label>
+        <input type="text" id="input" document.getElementById("inputString").value>
 
-</body>
+        <button onclick="splitFunction(document.getElementById('inputString').value)">Split</button>
+        <p id="result"></p>
+    </body>
 </html>

@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Regex Anchors & Lookaheads Practice</title>
-  <link rel="stylesheet" href="regexAssertions.css">
-  <script src="regexAssertions.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex Anchors & Lookaheads Practice</title>
+    <link rel="stylesheet" href="regexAssertions.css">
+    <script src="regexAssertions.js" defer></script>
 </head>
+
 <body>
-  <h1>🔍 Regex Anchors & Lookaheads Practice</h1>
+    <h1>🔍 Regex Anchors & Lookaheads Practice</h1>
 
-  <label>Enter Text:</label>
-  <input type="text" id="userInput" placeholder="Type something...">
+    <label>Enter Text:</label>
+    <input type="text" id="userInput" placeholder="Type something...">
 
-  <label>Select Pattern:</label>
-  <select id="patternSelect">
-    <option value="^A">^A → Starts with 'A'</option>
-    <option value="\\$">\$ → Ends with '$'</option>
-    <option value="\\bword\\b">\\bword\\b → Word boundary</option>
-    <option value="\\Bword\\B">\\Bword\\B → Non-boundary</option>
-    <option value="(?=cat)">(?=cat) → Positive Lookahead 'cat'</option>
-    <option value="(?!dog)">(?!dog) → Negative Lookahead 'dog'</option>
-    <option value="(?<=Mr\\.)">(?<=Mr\\.) → Positive Lookbehind 'Mr.'</option>
-    <option value="(?<!Mrs\\.)">(?<!Mrs\\.) → Negative Lookbehind 'Mrs.'</option>
-  </select>
+    <label>Select Pattern:</label>
+    <select id="patternSelect" onchange="loadSample()">
+        <option value="^A" data-sample="Apple is tasty">^A → Starts with 'A'</option>
+        <option value="\\$" data-sample="This is the end$">\$ → Ends with '$'</option>
+        <option value="\\bword\\b" data-sample="This is a word boundary">\\bword\\b → Word boundary</option>
+        <option value="\\Bword\\B" data-sample="passwords">\\Bword\\B → Non-boundary</option>
+        <option value="(?=cat)" data-sample="blackcat running">(?=cat) → Positive Lookahead 'cat'</option>
+        <option value="(?!dog)" data-sample="This is a cat">(?!dog) → Negative Lookahead 'dog'</option>
+        <option value="(?<=Mr\\.)" data-sample="Mr.Smith is here">(?<=Mr\.) → Positive Lookbehind 'Mr.' </option>
+        <option value="(?<!Mrs\\.)" data-sample="Ms.Jones is here">(?<!Mrs\.) → Negative Lookbehind 'Mrs.' </option>
 
-  <button onclick="testRegex()">Test Regex</button>
+    </select>
 
-  <h3>Result:</h3>
-  <p id="result"></p>
+    <button onclick="testRegex()">Test Regex</button>
+
+    <h3>Sample Input:</h3>
+    <p id="sampleText"></p>
+
+    <h3>Result:</h3>
+    <p id="result"></p>
 </body>
+
 </html>

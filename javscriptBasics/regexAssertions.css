@@ -3,36 +3,42 @@ body {
     background: #f0f8ff;
     text-align: left;
     padding: 20px;
-  }
-  
-  label {
+}
+
+label {
     display: block;
     margin-top: 10px;
     font-weight: bold;
-  }
-  
-  input, select, button {
-    margin: 8px;
+}
+
+input,
+select,
+button {
+    margin: 5px;
     padding: 8px;
     font-size: 1rem;
-  }
-  
-  button {
+}
+
+button {
     background: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background: #0056b3;
-  }
-  
-  #result {
+}
+
+#sampleText {
+    font-style: italic;
+    color: #555;
+}
+
+#result {
     margin-top: 20px;
     font-size: 1.2rem;
     color: darkgreen;
     font-weight: bold;
-  }
-  
+}

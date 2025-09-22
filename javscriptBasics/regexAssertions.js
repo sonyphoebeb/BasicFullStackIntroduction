@@ -1,28 +1,27 @@
-function loadSample() {
-    let select = document.getElementById("patternSelect");
-    let sample = select.options[select.selectedIndex].getAttribute("data-sample");
-    document.getElementById("userInput").value = sample;
-    document.getElementById("sampleText").innerHTML = "💡 Suggested Sample: " + sample;
-}
-
 function testRegex() {
-    let input = document.getElementById("userInput").value;
-    let pattern = document.getElementById("patternSelect").value;
+    const select = document.getElementById("regexSelect");
+    const pattern = select.value;
+    const inputText = document.getElementById("testInput").value;
 
     try {
-        let regex = new RegExp(pattern, "g"); // global search
-        let matches = input.match(regex);
+        const regex = new RegExp(pattern, "g");
+        const matches = inputText.match(regex);
 
         if (matches) {
-            document.getElementById("result").innerHTML =
-                "✅ Match Found: " + matches.join(", ");
+            document.getElementById("output").innerHTML =
+                `<p class="match">✅ Matches Found: ${matches.join(", ")}</p>`;
         } else {
-            document.getElementById("result").innerHTML = "❌ No Match Found";
+            document.getElementById("output").innerHTML =
+                `<p class="no-match">❌ No Match Found</p>`;
         }
-    } catch (error) {
-        document.getElementById("result").innerHTML = "⚠️ Invalid Regex Pattern";
+    } catch (err) {
+        document.getElementById("output").innerHTML =
+            `<p class="no-match">⚠️ Invalid Regex: ${err.message}</p>`;
     }
 }
 
-// Load first sample on page load
-window.onload = loadSample;
+function fillSample() {
+    const select = document.getElementById("regexSelect");
+    const sample = select.options[select.selectedIndex].getAttribute("data-sample");
+    document.getElementById("testInput").value = sample;
+}

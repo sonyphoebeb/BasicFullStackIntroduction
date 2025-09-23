@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex Quantifiers Practice</title>
+    <link rel="stylesheet" href="regExpQuantifiers.css">
+    <script src="regExpQuantifiers.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🔢 JavaScript RegExp Quantifiers</h1>
+        <p>Enter some text and test different quantifiers:</p>
+
+        <label>Enter text:</label>
+        <input type="text" id="userInput" placeholder="Type something..." />
+
+        <div class="btn-group">
+            <button onclick="testRegex('a+')">x+</button>
+            <button onclick="testRegex('a*')">x*</button>
+            <button onclick="testRegex('a?')">x?</button>
+            <button onclick="testRegex('a{3}')">x{n}</button>
+            <button onclick="testRegex('a{2,4}')">x{n,m}</button>
+            <button onclick="testRegex('a{2,}')">x{n,}</button>
+        </div>
+
+        <p id="result"></p>
+    </div>
+</body>
+
+</html>

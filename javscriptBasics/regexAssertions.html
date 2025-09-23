@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Regex Syntax Practice</title>
     <link rel="stylesheet" href="regexAssertions.css">
-    <script src="regexAssertions.html" defer></script>
+    <script src="regexAssertions.js" defer></script>
 </head>
 
 <body>
@@ -20,9 +20,8 @@
         <option value="\\Bword\\B" data-sample="passwords">\\Bword\\B → Non-boundary</option>
         <option value="(?=cat)" data-sample="blackcat running">(?=cat) → Positive Lookahead 'cat'</option>
         <option value="(?!dog)" data-sample="This is a cat">(?!dog) → Negative Lookahead 'dog'</option>
-        <option value="(?&lt;=Mr\\.)" data-sample="Mr.Smith is here">(?&lt;=Mr\.) → Positive Lookbehind 'Mr.'</option>
-        <option value="(?&lt;!Mrs\\.)" data-sample="Ms.Jones is here">(?&lt;!Mrs\.) → Negative Lookbehind 'Mrs.'
-        </option>
+        <option value="(?<=Mr\\.)" data-sample="Mr.Smith is here">(?<=Mr\.) → Positive Lookbehind 'Mr.' </option>
+        <option value="(?<!Mrs\\.)" data-sample="Ms.Jones is here">(?<!Mrs\.) → Negative Lookbehind 'Mrs.' </option>
     </select>
     <br><br>
 

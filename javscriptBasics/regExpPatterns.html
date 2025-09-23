@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regex Flags Practice</title>
+  <link rel="stylesheet" href="regExpPatterns.css">
+  <script src="regExpPatterns.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🚩 JavaScript RegExp Flags</h1>
+    <p>Enter some text and test different flags:</p>
+
+    <label>Enter text:</label>
+    <input type="text" id="userInput" placeholder="Type something..." />
+
+    <div class="btn-group">
+      <button onclick="testRegex('hello','g')">/g (global)</button>
+      <button onclick="testRegex('hello','i')">/i (ignore case)</button>
+      <button onclick="testRegex('^hello','m')">/m (multiline)</button>
+      <button onclick="testRegex('.','s')">/s (dotAll)</button>
+      <button onclick="testRegex('🍎','u')">/u (Unicode)</button>
+      <button onclick="testRegex('hello','y')">/y (sticky)</button>
+      <button onclick="testRegex('lo','d')">/d (indices)</button>
+      <button onclick="testRegex('hi','v')">/v (Unicode v)</button>
+    </div>
+
+    <p id="result"></p>
+    <p id="explanation"></p>
+  </div>
+</body>
+</html>

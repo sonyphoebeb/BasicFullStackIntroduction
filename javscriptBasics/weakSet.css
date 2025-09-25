@@ -30,6 +30,7 @@ body {
     background: #0b7dda;
   }
   
+  #initialObjects,
   #result {
     margin-top: 15px;
     font-weight: bold;

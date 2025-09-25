@@ -3,7 +3,7 @@ let weakSet = new WeakSet();
 
 // Example objects
 let obj1 = { name: "Sony" };
-let obj2 = { name: "Trainer" };
+let obj2 = { name: "Learner" };
 
 // Show initial data
 window.onload = function () {

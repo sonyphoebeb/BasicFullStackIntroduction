@@ -1,9 +1,8 @@
 // Create a sample map
 let myMap = new Map([
-    ["Country", "India"],
-    ["State", "AP"],
-    ["District", "Eluru"],
-    ["Pin", "534460"]
+    ["name", "Alice"],
+    ["age", 25],
+    ["country", "India"]
   ]);
   
   // 1. new Map()
@@ -17,14 +16,19 @@ let myMap = new Map([
   
   // 2. Map.set()
   function useSet() {
-    myMap.set("language", "JavaScript");
-    document.getElementById("output").innerHTML = "Added: language ➝ JavaScript";
+    let key = prompt("Enter the key to set:");
+    let value = prompt("Enter the value for " + key + ":");
+    myMap.set(key, value);
+    document.getElementById("output").innerHTML = `Added: ${key} ➝ ${value}`;
   }
   
   // 3. Map.get()
   function useGet() {
-    let value = myMap.get("name");
-    document.getElementById("output").innerHTML = "myMap.get('name') = " + value;
+    let key = prompt("Enter the key to get value:");
+    let value = myMap.get(key);
+    document.getElementById("output").innerHTML = value
+      ? `myMap.get('${key}') = ${value}`
+      : `Key '${key}' not found!`;
   }
   
   // 4. Map.size
@@ -34,20 +38,28 @@ let myMap = new Map([
   
   // 5. Map.delete()
   function useDelete() {
-    myMap.delete("age");
-    document.getElementById("output").innerHTML = "Deleted key: age";
+    let key = prompt("Enter the key to delete:");
+    if (myMap.delete(key)) {
+      document.getElementById("output").innerHTML = `Deleted key: ${key}`;
+    } else {
+      document.getElementById("output").innerHTML = `Key '${key}' not found.`;
+    }
   }
   
   // 6. Map.has()
   function useHas() {
-    let result = myMap.has("country");
-    document.getElementById("output").innerHTML = "Has country? " + result;
+    let key = prompt("Enter the key to check:");
+    let result = myMap.has(key);
+    document.getElementById("output").innerHTML = `Has ${key}? ${result}`;
   }
   
   // 7. Map.clear()
   function useClear() {
-    myMap.clear();
-    document.getElementById("output").innerHTML = "Map cleared!";
+    let confirmClear = confirm("Are you sure you want to clear the Map?");
+    if (confirmClear) {
+      myMap.clear();
+      document.getElementById("output").innerHTML = "Map cleared!";
+    }
   }
   
   // 8. Map.forEach()
@@ -88,9 +100,12 @@ let myMap = new Map([
   
   // 12. Objects as Keys
   function useObjectsAsKeys() {
-    let objKey = { id: 1 };
-    myMap.set(objKey, "Object Value");
-    document.getElementById("output").innerHTML = "Added object key: {id:1} ➝ Object Value";
+    let id = prompt("Enter object id:");
+    let objKey = { id: id };
+    let value = prompt("Enter value for object key:");
+    myMap.set(objKey, value);
+    document.getElementById("output").innerHTML =
+      `Added object key: {id:${id}} ➝ ${value}`;
   }
   
   // 13. Map.groupBy() (ES2023+)

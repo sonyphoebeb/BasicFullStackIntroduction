@@ -1,8 +1,9 @@
 // Create a sample map
 let myMap = new Map([
-    ["name", "Alice"],
-    ["age", 25],
-    ["country", "India"]
+    ["Country", "India"],
+    ["State", "AP"],
+    ["District", "Eluru"],
+    ["Pin", "534460"]
   ]);
   
   // 1. new Map()

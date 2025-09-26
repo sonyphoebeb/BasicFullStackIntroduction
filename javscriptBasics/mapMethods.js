@@ -1,7 +1,7 @@
 // Create a sample map
 let myMap = new Map([
-    ["name", "Alice"],
-    ["age", 25],
+    ["name", "Sony"],
+    ["age", 23],
     ["country", "India"]
   ]);
   
